@@ -5,14 +5,14 @@ class ItemEntity {
   final String kind;
   final String etag;
   final String id;
-  final ItemSnippetEntity itemSnippetEntity;
+  final ItemSnippetEntity itemSnippet;
   final RepliesEntity replies;
 
   ItemEntity({
     required this.kind,
     required this.etag,
     required this.id,
-    required this.itemSnippetEntity,
+    required this.itemSnippet,
     required this.replies,
   });
 }

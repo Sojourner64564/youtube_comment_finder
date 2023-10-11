@@ -1,7 +1,7 @@
 import 'package:youtube_comment_finder/features/youtube_comment_finder/data/models/author_channel_id_model.dart';
-import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/author_channel_id_entity.dart';
+import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/top_level_comment_snippet_entity.dart';
 
-class TopLevelCommentSnippetModel {
+class TopLevelCommentSnippetModel extends TopLevelCommentSnippetEntity{
   TopLevelCommentSnippetModel({
     required String channelId,
     required String videoId,
@@ -17,7 +17,22 @@ class TopLevelCommentSnippetModel {
     required int likeCount,
     required String publishedAt,
     required String updatedAt,
-  });
+  }) : super(
+      channelId: channelId,
+      videoId: videoId,
+      textDisplay: textDisplay,
+      textOriginal: textOriginal,
+      parentId: parentId,
+      authorDisplayName: authorDisplayName,
+      authorProfileImageUrl: authorProfileImageUrl,
+      authorChannelUrl: authorChannelUrl,
+      authorChannelId: authorChannelId,
+      canRate: canRate,
+      viewerRating: viewerRating,
+      likeCount: likeCount,
+      publishedAt: publishedAt,
+      updatedAt: updatedAt,
+  );
 
   factory TopLevelCommentSnippetModel.fromJson(Map<String, dynamic> json) => TopLevelCommentSnippetModel(
     channelId: json["channelId"],

@@ -5,13 +5,13 @@ import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/en
 class CommentThreadEntity{
   final String kind;
   final String etag;
-  final PageInfoEntity pageInfoEntity;
+  final PageInfoEntity pageInfo;
   final List<ItemEntity> items;
 
   const CommentThreadEntity({
     required this.kind,
     required this.etag,
-    required this.pageInfoEntity,
+    required this.pageInfo,
     required this.items,
   });
 
