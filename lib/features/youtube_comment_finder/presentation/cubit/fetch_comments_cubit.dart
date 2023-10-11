@@ -10,17 +10,31 @@ class FetchCommentsCubit extends Cubit<MyState> {
   FetchCommentsCubit(this.useCaseCommentThreadImpl) : super(InitialState());
 //AIzaSyCHzVbBgBV7jxMOaTNhngcW_O3AeIWtLmQ
   final UseCaseCommentThreadImpl useCaseCommentThreadImpl;
+  List<CommentThreadEntity> commentsList = [];
+  List<String> repliesList = [];
+/*
+  for(int i=0;i<commentsList.length;i++){
+        repliesList.add(commentsList[i].items[0].itemSnippet.topLevelComment.snippet.textOriginal);
+      }
+ */
 
   void fetchComments() async {
+    commentsList.clear();
+    repliesList.clear();
     final failureOrCommentsEither = await useCaseCommentThreadImpl.call(NoParams());
     final failureOrComments = failureOrCommentsEither.fold((failure) => ErrorState(), (commentThread) => commentThread);
     if(failureOrComments is ErrorState){
       emit(failureOrComments);
     }
+    commentsList.add(failureOrComments as CommentThreadEntity);
+    if((failureOrComments).nextPageToken == ''){
+      //:TODO --------------
+    }else{
 
-    print((failureOrComments as CommentThreadEntity));
-    //final bruh = (failureOrComments as CommentThreadEntity).items[0].itemSnippet.topLevelComment.
-    //emit(LoadedState(failureOrComments as CommentThreadEntity));
+    }
+
 
   }
+
+
 }

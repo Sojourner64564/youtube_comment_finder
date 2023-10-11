@@ -6,11 +6,13 @@ class CommentThreadModel extends CommentThreadEntity{
   const CommentThreadModel({
     required String kind,
     required String etag,
+    required String nextPageToken,
     required PageInfoModel pageInfo,
     required List<ItemModel> items,
   }): super(
     kind: kind,
     etag: etag,
+      nextPageToken: nextPageToken,
       pageInfo: pageInfo,
     items: items
   );
@@ -18,6 +20,7 @@ class CommentThreadModel extends CommentThreadEntity{
   factory CommentThreadModel.fromJson(Map<String, dynamic> json) => CommentThreadModel(
     kind: json["kind"],
     etag: json["etag"],
+    nextPageToken: json['nextPageToken'],
     pageInfo: PageInfoModel.fromJson(json["pageInfo"]),
     items: List<ItemModel>.from(json["items"].map((x) => ItemModel.fromJson(x))),
   );

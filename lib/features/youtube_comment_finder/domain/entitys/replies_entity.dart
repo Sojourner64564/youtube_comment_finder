@@ -3,7 +3,7 @@ import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/en
 class RepliesEntity {
   final List<CommentEntity> comments;
 
-  RepliesEntity({
-    required this.comments,
+  const RepliesEntity({
+     this.comments = const [],
   });
 }

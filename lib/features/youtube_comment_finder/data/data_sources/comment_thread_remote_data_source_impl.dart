@@ -12,7 +12,7 @@ class CommentThreadRemoteDataSourceImpl implements CommentThreadRemoteDataSource
   Future<CommentThreadModel> fetchComments() async{
     final response = await http.get(
       Uri.parse(
-          'https://www.googleapis.com/youtube/v3/commentThreads?key=AIzaSyAwN8yc4ittxrac_rhW4swd63odvZbHRD8&part=snippet,replies&videoId=kWyXbLOQ1Lc'),
+          'https://www.googleapis.com/youtube/v3/commentThreads?key=AIzaSyAwN8yc4ittxrac_rhW4swd63odvZbHRD8&part=snippet,replies&videoId=_94dSVxTW80'),
       headers: {'Content-Type': 'application/json'},
     );
     if (response.statusCode == 200) {

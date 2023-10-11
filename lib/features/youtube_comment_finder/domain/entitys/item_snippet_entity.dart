@@ -8,12 +8,12 @@ class ItemSnippetEntity {
   final int totalReplyCount;
   final bool isPublic;
 
-  ItemSnippetEntity({
-    required this.channelId,
-    required this.videoId,
-    required this.topLevelComment,
-    required this.canReply,
-    required this.totalReplyCount,
-    required this.isPublic,
+  const ItemSnippetEntity({
+     this.channelId = '',
+     this.videoId = '',
+     this.topLevelComment = const CommentEntity(),
+     this.canReply = false,
+     this.totalReplyCount = 0,
+     this.isPublic = false,
   });
 }

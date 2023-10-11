@@ -5,10 +5,7 @@ class PageInfoEntity {
   final int resultsPerPage;
 
  const PageInfoEntity({
-    required this.totalResults,
-    required this.resultsPerPage,
+     this.totalResults = 0,
+     this.resultsPerPage = 0,
   });
-
- // @override
-  //List<Object?> get props => [totalResults, resultsPerPage];
 }

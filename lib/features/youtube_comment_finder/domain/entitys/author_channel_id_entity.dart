@@ -1,6 +1,6 @@
 class AuthorChannelIdEntity {
-  AuthorChannelIdEntity({
-    required this.value,
+  const AuthorChannelIdEntity({
+     this.value = '',
   });
 
   final String value;

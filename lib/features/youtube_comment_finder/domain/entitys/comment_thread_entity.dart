@@ -5,17 +5,15 @@ import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/en
 class CommentThreadEntity{
   final String kind;
   final String etag;
+  final String nextPageToken;
   final PageInfoEntity pageInfo;
   final List<ItemEntity> items;
 
   const CommentThreadEntity({
-    required this.kind,
-    required this.etag,
-    required this.pageInfo,
-    required this.items,
+     this.kind = '',
+     this.etag = '',
+     this.nextPageToken = '',
+     this.pageInfo = const PageInfoEntity(),
+     this.items = const [],
   });
-
-//  @override
- // List<Object?> get props => [kind, etag, pageInfoEntity, items];
-
 }

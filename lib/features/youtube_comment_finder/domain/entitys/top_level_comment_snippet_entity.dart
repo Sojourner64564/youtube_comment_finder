@@ -5,7 +5,7 @@ class TopLevelCommentSnippetEntity {
   final String videoId;
   final String textDisplay;
   final String textOriginal;
-  final String? parentId;
+  final String parentId;
   final String authorDisplayName;
   final String authorProfileImageUrl;
   final String authorChannelUrl;
@@ -16,20 +16,20 @@ class TopLevelCommentSnippetEntity {
   final String publishedAt;
   final String updatedAt;
 
-  TopLevelCommentSnippetEntity({
-    required this.channelId,
-    required this.videoId,
-    required this.textDisplay,
-    required this.textOriginal,
-    required this.parentId,
-    required this.authorDisplayName,
-    required this.authorProfileImageUrl,
-    required this.authorChannelUrl,
-    required this.authorChannelId,
-    required this.canRate,
-    required this.viewerRating,
-    required this.likeCount,
-    required this.publishedAt,
-    required this.updatedAt,
+  const TopLevelCommentSnippetEntity({
+     this.channelId = '',
+     this.videoId = '',
+     this.textDisplay = '',
+     this.textOriginal = '',
+     this.parentId = '',
+    this.authorDisplayName = '',
+     this.authorProfileImageUrl = '',
+     this.authorChannelUrl = '',
+     this.authorChannelId = const AuthorChannelIdEntity(),
+    this.canRate = false,
+     this.viewerRating = '',
+     this.likeCount = 0,
+     this.publishedAt = '',
+     this.updatedAt = '',
   });
 }

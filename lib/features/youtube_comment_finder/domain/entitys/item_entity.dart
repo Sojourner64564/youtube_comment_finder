@@ -8,11 +8,11 @@ class ItemEntity {
   final ItemSnippetEntity itemSnippet;
   final RepliesEntity replies;
 
-  ItemEntity({
-    required this.kind,
-    required this.etag,
-    required this.id,
-    required this.itemSnippet,
-    required this.replies,
+ const ItemEntity({
+     this.kind = '',
+     this.etag = '',
+     this.id = '',
+     this.itemSnippet = const ItemSnippetEntity(),
+     this.replies = const RepliesEntity(),
   });
 }

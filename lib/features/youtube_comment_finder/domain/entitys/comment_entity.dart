@@ -6,10 +6,10 @@ class CommentEntity {
   final String id;
   final TopLevelCommentSnippetEntity snippet;
 
-  CommentEntity({
-    required this.kind,
-    required this.etag,
-    required this.id,
-    required this.snippet,
+  const CommentEntity({
+     this.kind = '',
+     this.etag = '',
+     this.id = '',
+     this.snippet = const TopLevelCommentSnippetEntity(),
   });
 }
