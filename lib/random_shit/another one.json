@@ -1,0 +1,1219 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "CabdhlQKuXfXEEzQTIW5EvXryMQ",
+  "nextPageToken": "QURTSl9pM0lVRGpjbDNyZFZVeU5hNmR4d042UmNZNVVFWFpJaWFoRzF4OXlVamNOVV82MVU0cXl3SUt3LWZnSGVxcmlRbXE3N1FuOXVERGZXMVNMVXpEdW11d0k2MGhkTUE=",
+  "pageInfo": {
+    "totalResults": 20,
+    "resultsPerPage": 20
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "8wkVVDmvg2RsdmQ_wRpf_Qp4jWo",
+      "id": "UgwcxxYU2HMaW4Rx6at4AaABAg",
+      "snippet": {
+        "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+        "videoId": "_94dSVxTW80",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "kIFSoKfiqHv8KgFnQ2RaG83gUPk",
+          "id": "UgwcxxYU2HMaW4Rx6at4AaABAg",
+          "snippet": {
+            "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+            "videoId": "_94dSVxTW80",
+            "textDisplay": "<a href=\"about:invalid#zCSafez\"></a> Если Вам понравилось это видео, предлагаю посмотреть и другие на этом канале. Ваш интерес это главная поддержка канала и мой мотиватор. Спасибо!",
+            "textOriginal": " Если Вам понравилось это видео, предлагаю посмотреть и другие на этом канале. Ваш интерес это главная поддержка канала и мой мотиватор. Спасибо!",
+            "authorDisplayName": "Находки с грядки",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKaKPkaX9cu-0ghMWev3uK8S5DL-lsZHP45IqSdTTA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCbR_XE_Jp_wCnm_bKDA-tYg",
+            "authorChannelId": {
+              "value": "UCbR_XE_Jp_wCnm_bKDA-tYg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 6,
+            "publishedAt": "2023-06-04T16:36:15Z",
+            "updatedAt": "2023-06-04T16:38:30Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "3Ew5wCrzNvlxBybkTxMWAS64mn8",
+      "id": "UgxQy3Of7gqSSEaFbT94AaABAg",
+      "snippet": {
+        "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+        "videoId": "_94dSVxTW80",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "a1EKAn0OG0s6Syv9r-R7xhqXqeI",
+          "id": "UgxQy3Of7gqSSEaFbT94AaABAg",
+          "snippet": {
+            "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+            "videoId": "_94dSVxTW80",
+            "textDisplay": "Молодцы",
+            "textOriginal": "Молодцы",
+            "authorDisplayName": "Сергей Гребенев",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKZ_b8ug7W6khXvIHBjw3PoFVYRFQdEgCPJyJzNxdwLoh6oap3Bfvw9l050b5eTuGw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UC1blViIlGy_uLosHalq7Sww",
+            "authorChannelId": {
+              "value": "UC1blViIlGy_uLosHalq7Sww"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2023-08-25T13:47:29Z",
+            "updatedAt": "2023-08-25T13:47:29Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "OX-ufK7yiHVm1MBO_oZbjNkMZ64",
+            "id": "UgxQy3Of7gqSSEaFbT94AaABAg.9tqAViWYeEo9tt5UEhw8Wg",
+            "snippet": {
+              "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "videoId": "_94dSVxTW80",
+              "textDisplay": "Спасибо🤝",
+              "textOriginal": "Спасибо🤝",
+              "parentId": "UgxQy3Of7gqSSEaFbT94AaABAg",
+              "authorDisplayName": "Находки с грядки",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKaKPkaX9cu-0ghMWev3uK8S5DL-lsZHP45IqSdTTA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "authorChannelId": {
+                "value": "UCbR_XE_Jp_wCnm_bKDA-tYg"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2023-08-26T17:01:19Z",
+              "updatedAt": "2023-08-26T17:01:19Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ak4qUEEuZMT-uocr6h_XpTIH_jk",
+      "id": "UgxeSTKatpAYnZ-H83N4AaABAg",
+      "snippet": {
+        "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+        "videoId": "_94dSVxTW80",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "5r0dNMwnFOWoQQckTETAKHJOCqI",
+          "id": "UgxeSTKatpAYnZ-H83N4AaABAg",
+          "snippet": {
+            "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+            "videoId": "_94dSVxTW80",
+            "textDisplay": "Мрлодцы",
+            "textOriginal": "Мрлодцы",
+            "authorDisplayName": "Сергей Гребенев",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKZ_b8ug7W6khXvIHBjw3PoFVYRFQdEgCPJyJzNxdwLoh6oap3Bfvw9l050b5eTuGw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UC1blViIlGy_uLosHalq7Sww",
+            "authorChannelId": {
+              "value": "UC1blViIlGy_uLosHalq7Sww"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2023-08-25T13:46:49Z",
+            "updatedAt": "2023-08-25T13:46:49Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "xh1-v6ChejzR6YqvNWh4vban16s",
+            "id": "UgxeSTKatpAYnZ-H83N4AaABAg.9tqAQlWzMcZ9tqB-gzaHkb",
+            "snippet": {
+              "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "videoId": "_94dSVxTW80",
+              "textDisplay": "<a href=\"https://www.youtube.com/watch?v=_94dSVxTW80&amp;t=16m36s\">16:36</a>",
+              "textOriginal": "16:36",
+              "parentId": "UgxeSTKatpAYnZ-H83N4AaABAg",
+              "authorDisplayName": "Сергей Гребенев",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKZ_b8ug7W6khXvIHBjw3PoFVYRFQdEgCPJyJzNxdwLoh6oap3Bfvw9l050b5eTuGw=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UC1blViIlGy_uLosHalq7Sww",
+              "authorChannelId": {
+                "value": "UC1blViIlGy_uLosHalq7Sww"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2023-08-25T13:51:51Z",
+              "updatedAt": "2023-08-25T13:51:51Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "eklv7z4z2t6s0vsGiEW-4aKIr6w",
+      "id": "Ugy9efdyjQfXAB0SJLd4AaABAg",
+      "snippet": {
+        "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+        "videoId": "_94dSVxTW80",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "oAQph8D73RB7AF8z4FslljcyksM",
+          "id": "Ugy9efdyjQfXAB0SJLd4AaABAg",
+          "snippet": {
+            "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+            "videoId": "_94dSVxTW80",
+            "textDisplay": "Очень понравилось то, как вы ведете канал! Очень грамотно и интересно рассказываете! Продолжайте в том же духе! Очень много монет. И даже иконка есть! Молодцы!!!!!!",
+            "textOriginal": "Очень понравилось то, как вы ведете канал! Очень грамотно и интересно рассказываете! Продолжайте в том же духе! Очень много монет. И даже иконка есть! Молодцы!!!!!!",
+            "authorDisplayName": "Рузский Копатель",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKYlJJA5glFHDe2gvq041Xsn8vDrtbLnU25yjGP2Tw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCCsGZcs6-2DCYnjLW8ePEsg",
+            "authorChannelId": {
+              "value": "UCCsGZcs6-2DCYnjLW8ePEsg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2023-07-26T16:42:37Z",
+            "updatedAt": "2023-07-26T16:42:37Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "nifT76L8nw8etnYYHCfu2S7F2KA",
+      "id": "UgxRUWi4qbNejub5YOp4AaABAg",
+      "snippet": {
+        "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+        "videoId": "_94dSVxTW80",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "t9cwrzbcmZ8iUjmbBpoLm3m_uLA",
+          "id": "UgxRUWi4qbNejub5YOp4AaABAg",
+          "snippet": {
+            "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+            "videoId": "_94dSVxTW80",
+            "textDisplay": "Закапывать ямки нуна",
+            "textOriginal": "Закапывать ямки нуна",
+            "authorDisplayName": "Гражданин СССР",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/FbWxr32UG4V5HY4Ptg7OwXBENqp1QIaIZEHwJQ9wkiTyAT3QlyU__N63mCIxDFKrmYufWLqEBg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCGA_hmNsnPt9Ro96NCCPl_g",
+            "authorChannelId": {
+              "value": "UCGA_hmNsnPt9Ro96NCCPl_g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2023-07-16T16:39:00Z",
+            "updatedAt": "2023-07-16T16:39:00Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "NiX37H43ExvotSrHjEePq0P_YD4",
+      "id": "UgwDeGRjYw2ApP4Wds94AaABAg",
+      "snippet": {
+        "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+        "videoId": "_94dSVxTW80",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "P50zy8lKtj9wW1aIxU9jSM97v40",
+          "id": "UgwDeGRjYw2ApP4Wds94AaABAg",
+          "snippet": {
+            "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+            "videoId": "_94dSVxTW80",
+            "textDisplay": "Мама дорогая! Как можно спутать сигнал поздней копейки и крупной медной монеты?",
+            "textOriginal": "Мама дорогая! Как можно спутать сигнал поздней копейки и крупной медной монеты?",
+            "authorDisplayName": "Дмитрий Шурыгин",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKbIYN-fFX4LoT-2o_B0b9M6mMaDo3KzyxYPfg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UC7ixGXxR-08lXiFp_wMOZNw",
+            "authorChannelId": {
+              "value": "UC7ixGXxR-08lXiFp_wMOZNw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2023-07-04T04:16:03Z",
+            "updatedAt": "2023-07-04T04:16:03Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "_qDLoDOJVZaWr5EH6cHtKxz5dHw",
+            "id": "UgwDeGRjYw2ApP4Wds94AaABAg.9rjFltHxDsA9rjLILD0Ra_",
+            "snippet": {
+              "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "videoId": "_94dSVxTW80",
+              "textDisplay": "Сигнал сильный высокий, достаешь - там копейка, думаешь: &quot;ну значит копейка была&quot;. А потом крупная монета вылезает сразу за ней.",
+              "textOriginal": "Сигнал сильный высокий, достаешь - там копейка, думаешь: \"ну значит копейка была\". А потом крупная монета вылезает сразу за ней.",
+              "parentId": "UgwDeGRjYw2ApP4Wds94AaABAg",
+              "authorDisplayName": "Находки с грядки",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKaKPkaX9cu-0ghMWev3uK8S5DL-lsZHP45IqSdTTA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "authorChannelId": {
+                "value": "UCbR_XE_Jp_wCnm_bKDA-tYg"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2023-07-04T05:04:18Z",
+              "updatedAt": "2023-07-04T05:04:18Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "9RRaW4lEY3kYePGInv4uFRNiJk0",
+      "id": "Ugy5_G9I2KmvMKJQucZ4AaABAg",
+      "snippet": {
+        "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+        "videoId": "_94dSVxTW80",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Qvl8aAueejyZjeHW87_uTdQWdXY",
+          "id": "Ugy5_G9I2KmvMKJQucZ4AaABAg",
+          "snippet": {
+            "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+            "videoId": "_94dSVxTW80",
+            "textDisplay": "Интересный коп, видно что оператор  неплохо владеет прибором, а деус какой и с какой прошивкой?",
+            "textOriginal": "Интересный коп, видно что оператор  неплохо владеет прибором, а деус какой и с какой прошивкой?",
+            "authorDisplayName": "Рафис Бадиков",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKbWiZ43fIyHHbvri_aBFgejw6mgNTpeklLlrw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCT8Y37R1xEOEOrCrDghgbbw",
+            "authorChannelId": {
+              "value": "UCT8Y37R1xEOEOrCrDghgbbw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2023-06-25T18:44:57Z",
+            "updatedAt": "2023-06-25T18:44:57Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "pTC3tNM8SMq_xlIbrDo3A-qjLMo",
+            "id": "Ugy5_G9I2KmvMKJQucZ4AaABAg.9rOd328EhHq9rR4YfR_l9V",
+            "snippet": {
+              "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "videoId": "_94dSVxTW80",
+              "textDisplay": "@Находки с грядки спасибо",
+              "textOriginal": "@Находки с грядки спасибо",
+              "parentId": "Ugy5_G9I2KmvMKJQucZ4AaABAg",
+              "authorDisplayName": "Рафис Бадиков",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKbWiZ43fIyHHbvri_aBFgejw6mgNTpeklLlrw=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCT8Y37R1xEOEOrCrDghgbbw",
+              "authorChannelId": {
+                "value": "UCT8Y37R1xEOEOrCrDghgbbw"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2023-06-26T17:32:25Z",
+              "updatedAt": "2023-06-26T17:32:25Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "t2m3Ta_OpCYIHHGseyb_IHvHqhE",
+            "id": "Ugy5_G9I2KmvMKJQucZ4AaABAg.9rOd328EhHq9rPUu1v83bc",
+            "snippet": {
+              "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "videoId": "_94dSVxTW80",
+              "textDisplay": "Здравствуйте. Первый деус, катушка х35, прошивка 5.21",
+              "textOriginal": "Здравствуйте. Первый деус, катушка х35, прошивка 5.21",
+              "parentId": "Ugy5_G9I2KmvMKJQucZ4AaABAg",
+              "authorDisplayName": "Находки с грядки",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKaKPkaX9cu-0ghMWev3uK8S5DL-lsZHP45IqSdTTA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "authorChannelId": {
+                "value": "UCbR_XE_Jp_wCnm_bKDA-tYg"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2023-06-26T02:44:11Z",
+              "updatedAt": "2023-06-26T02:44:11Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "_Tf6LLlEqGQpGhc2l9iYH-EjA4Y",
+      "id": "UgytYNQ-iaHpvK6WEBl4AaABAg",
+      "snippet": {
+        "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+        "videoId": "_94dSVxTW80",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "2uXYfZS69e_Yr297JTAv7Y0DuqQ",
+          "id": "UgytYNQ-iaHpvK6WEBl4AaABAg",
+          "snippet": {
+            "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+            "videoId": "_94dSVxTW80",
+            "textDisplay": "Привет! Шикарный коп. Успехов.",
+            "textOriginal": "Привет! Шикарный коп. Успехов.",
+            "authorDisplayName": "Вятский коп",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Ymrv-_IW7tX3Qa33rdwmVUy3IRdo0WDiwmI2P7PMdVsAHkGcd1ux4kajXt0Hnj43HON6BEBr=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCzF5LIQyIMsIEIoGxHG3dqA",
+            "authorChannelId": {
+              "value": "UCzF5LIQyIMsIEIoGxHG3dqA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2023-06-23T10:33:03Z",
+            "updatedAt": "2023-06-23T10:33:03Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "YeF02Vy2P4Dr4xwx9c-ep97vyFI",
+            "id": "UgytYNQ-iaHpvK6WEBl4AaABAg.9rIbAVOR-7K9rNM2r2t0td",
+            "snippet": {
+              "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "videoId": "_94dSVxTW80",
+              "textDisplay": "Привет, спасибо🖐️",
+              "textOriginal": "Привет, спасибо🖐️",
+              "parentId": "UgytYNQ-iaHpvK6WEBl4AaABAg",
+              "authorDisplayName": "Находки с грядки",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKaKPkaX9cu-0ghMWev3uK8S5DL-lsZHP45IqSdTTA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "authorChannelId": {
+                "value": "UCbR_XE_Jp_wCnm_bKDA-tYg"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2023-06-25T06:48:24Z",
+              "updatedAt": "2023-06-25T06:48:24Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "G5qtiGM9HU3PQ4aCo4BsVijTq5k",
+      "id": "UgyB6ET_7jNMdS6i6wp4AaABAg",
+      "snippet": {
+        "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+        "videoId": "_94dSVxTW80",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "dPnmzj_QjjsMQ9N0pBeiWFJ3MmE",
+          "id": "UgyB6ET_7jNMdS6i6wp4AaABAg",
+          "snippet": {
+            "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+            "videoId": "_94dSVxTW80",
+            "textDisplay": "12.40, для того, что бы не ударять солдата по каске, используйте пинпоинтер. И будет Вам счастье. 🙂",
+            "textOriginal": "12.40, для того, что бы не ударять солдата по каске, используйте пинпоинтер. И будет Вам счастье. 🙂",
+            "authorDisplayName": "1 1",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKbfddyHImYGg_jjkA646ywiizLC8kPQDi6bKQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCOAPexUT30FY6OCritRmMmQ",
+            "authorChannelId": {
+              "value": "UCOAPexUT30FY6OCritRmMmQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 5,
+            "publishedAt": "2023-06-17T10:55:52Z",
+            "updatedAt": "2023-06-17T11:09:37Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "8r0rSBbYKKwtpolaT8WuhY9cEFI",
+            "id": "UgyB6ET_7jNMdS6i6wp4AaABAg.9r3C0LDnUOf9r6HjsW88wY",
+            "snippet": {
+              "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "videoId": "_94dSVxTW80",
+              "textDisplay": "Да я его долбанул похоже сразу) медаль была не глубоко, с первого штыка выкинул её",
+              "textOriginal": "Да я его долбанул похоже сразу) медаль была не глубоко, с первого штыка выкинул её",
+              "parentId": "UgyB6ET_7jNMdS6i6wp4AaABAg",
+              "authorDisplayName": "Находки с грядки",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKaKPkaX9cu-0ghMWev3uK8S5DL-lsZHP45IqSdTTA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "authorChannelId": {
+                "value": "UCbR_XE_Jp_wCnm_bKDA-tYg"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2023-06-18T15:43:37Z",
+              "updatedAt": "2023-06-18T15:43:37Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "lRBkaPSfwxukci7ggfOLze1QiIo",
+      "id": "UgwyhD37nHlE93izW094AaABAg",
+      "snippet": {
+        "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+        "videoId": "_94dSVxTW80",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "btpIYUv1aN2xZGTlBTkXFLbz_6A",
+          "id": "UgwyhD37nHlE93izW094AaABAg",
+          "snippet": {
+            "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+            "videoId": "_94dSVxTW80",
+            "textDisplay": "Удачи в поисках,Мира и добра всем!👍👍👍",
+            "textOriginal": "Удачи в поисках,Мира и добра всем!👍👍👍",
+            "authorDisplayName": "Сергей Ченский",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKaSYilNZpzbhE4Gi3bo2fitLybARArgx610uw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCxs20xdYtBZkwDQOzNX2V6w",
+            "authorChannelId": {
+              "value": "UCxs20xdYtBZkwDQOzNX2V6w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2023-06-14T15:04:11Z",
+            "updatedAt": "2023-06-14T15:04:11Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "2DDUTZ4YRengSsHr8DUVI2n1E6g",
+            "id": "UgwyhD37nHlE93izW094AaABAg.9qwv2QvlhA69r-vmDlgU47",
+            "snippet": {
+              "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "videoId": "_94dSVxTW80",
+              "textDisplay": "Приветствую, спасибо🖐️👍",
+              "textOriginal": "Приветствую, спасибо🖐️👍",
+              "parentId": "UgwyhD37nHlE93izW094AaABAg",
+              "authorDisplayName": "Находки с грядки",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKaKPkaX9cu-0ghMWev3uK8S5DL-lsZHP45IqSdTTA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "authorChannelId": {
+                "value": "UCbR_XE_Jp_wCnm_bKDA-tYg"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2023-06-16T04:27:31Z",
+              "updatedAt": "2023-06-16T04:27:31Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "t04-3qnv7HISvViraBhpLrwXCYg",
+      "id": "Ugy72mOMqYG3t4csJpp4AaABAg",
+      "snippet": {
+        "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+        "videoId": "_94dSVxTW80",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "_sIYAv9_lnP1GEagsbOcC1opKuI",
+          "id": "Ugy72mOMqYG3t4csJpp4AaABAg",
+          "snippet": {
+            "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+            "videoId": "_94dSVxTW80",
+            "textDisplay": "На углу где была 10ка массон почему бы не шурфануть на пару штыков угол? А затем вдоль стены в одну и другую стороны?",
+            "textOriginal": "На углу где была 10ка массон почему бы не шурфануть на пару штыков угол? А затем вдоль стены в одну и другую стороны?",
+            "authorDisplayName": "Кладоискатель & Художник",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKayz1SyBDX32cVNLRZ9Oc7IDE1ls32BTtAqrR4S1BivogklO0wWtUWLOukiyLYsfg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCCUWMcjDwFOuMKjsL7o_CBg",
+            "authorChannelId": {
+              "value": "UCCUWMcjDwFOuMKjsL7o_CBg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2023-06-13T23:18:17Z",
+            "updatedAt": "2023-06-13T23:19:04Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "4HDfUezuFfDK9d1JfsgTCWdLBJc",
+            "id": "Ugy72mOMqYG3t4csJpp4AaABAg.9qvDnUyXlVF9qvWGhyFT3Q",
+            "snippet": {
+              "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "videoId": "_94dSVxTW80",
+              "textDisplay": "Я раскидал тот угол и стену напротив, где была медаль. Один из товарищей шурфанул поглубже стенку и угол с десяткой. Больше ничего интересного не было.",
+              "textOriginal": "Я раскидал тот угол и стену напротив, где была медаль. Один из товарищей шурфанул поглубже стенку и угол с десяткой. Больше ничего интересного не было.",
+              "parentId": "Ugy72mOMqYG3t4csJpp4AaABAg",
+              "authorDisplayName": "Находки с грядки",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKaKPkaX9cu-0ghMWev3uK8S5DL-lsZHP45IqSdTTA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "authorChannelId": {
+                "value": "UCbR_XE_Jp_wCnm_bKDA-tYg"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2023-06-14T01:59:41Z",
+              "updatedAt": "2023-06-14T01:59:41Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "IJ9ENIF7v0wBLh0OIDfUPPlrxuE",
+      "id": "UgwZFrFleiePYnl35p54AaABAg",
+      "snippet": {
+        "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+        "videoId": "_94dSVxTW80",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "NOchd6WYYbNJur4PlIk2sqwCj6A",
+          "id": "UgwZFrFleiePYnl35p54AaABAg",
+          "snippet": {
+            "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+            "videoId": "_94dSVxTW80",
+            "textDisplay": "Супер коп!!!с пином у меня так же😂😂у напарника который 27 монет поднял,какой аппарат ??",
+            "textOriginal": "Супер коп!!!с пином у меня так же😂😂у напарника который 27 монет поднял,какой аппарат ??",
+            "authorDisplayName": "Антон",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKbkH5-NNAXYunhX9_orRAlCdc4ei1ZN7WyAiyBa9YsBJ4IECKakit6nLWawb5RdXg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCSIkNqR1Z1XzpmRPVGd-nZw",
+            "authorChannelId": {
+              "value": "UCSIkNqR1Z1XzpmRPVGd-nZw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2023-06-12T18:35:50Z",
+            "updatedAt": "2023-06-12T18:35:50Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "wjZ1k_V6aVk8SKc5BuLHTB2Ucmg",
+            "id": "UgwZFrFleiePYnl35p54AaABAg.9qs8fviQHBs9qs9gaiUnGP",
+            "snippet": {
+              "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "videoId": "_94dSVxTW80",
+              "textDisplay": "У напарника тоже Deus XP)",
+              "textOriginal": "У напарника тоже Deus XP)",
+              "parentId": "UgwZFrFleiePYnl35p54AaABAg",
+              "authorDisplayName": "Находки с грядки",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKaKPkaX9cu-0ghMWev3uK8S5DL-lsZHP45IqSdTTA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "authorChannelId": {
+                "value": "UCbR_XE_Jp_wCnm_bKDA-tYg"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2023-06-12T18:44:40Z",
+              "updatedAt": "2023-06-12T18:44:40Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "c-KJDvpRmDmaM_e13KCJYwEOFsE",
+      "id": "UgwChVpt7WHK9_n8btB4AaABAg",
+      "snippet": {
+        "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+        "videoId": "_94dSVxTW80",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "GXptEBwUmniQ-j17mCKNoUv1n_A",
+          "id": "UgwChVpt7WHK9_n8btB4AaABAg",
+          "snippet": {
+            "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+            "videoId": "_94dSVxTW80",
+            "textDisplay": "Здравствуйте! Случайно посмотрел ваш канал отличные видио шикарные находки.Хотелось- бы  чтобы по чаще выходили новые видео.",
+            "textOriginal": "Здравствуйте! Случайно посмотрел ваш канал отличные видио шикарные находки.Хотелось- бы  чтобы по чаще выходили новые видео.",
+            "authorDisplayName": "Артем Кульков",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKbo6PY37S0gr-H2qEMThEf6Z-fWd0OwF8Apuw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UC6hsysrQM8sOQlYj80JOh3Q",
+            "authorChannelId": {
+              "value": "UC6hsysrQM8sOQlYj80JOh3Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 4,
+            "publishedAt": "2023-06-11T18:50:16Z",
+            "updatedAt": "2023-06-11T18:50:16Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "Y9igBa_ClQmcZ8GY7oA4o2tAkUU",
+            "id": "UgwChVpt7WHK9_n8btB4AaABAg.9qpaXjZbcQN9qrvAmEz1e0",
+            "snippet": {
+              "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "videoId": "_94dSVxTW80",
+              "textDisplay": "Приветствую на канале! Рад, что мои видео вам понравились. Конечно и мне хотелось бы почаще что-то снимать, но эта деятельность проходит в формате увлечения, а остальное время занимает обычная жизнь с работой и прочими скучными делами. Но могу заверить, на этом канале будут появляться видео в любом случае, возможно с перерывами, но канал живой и копать я не перестаю год от года🙂",
+              "textOriginal": "Приветствую на канале! Рад, что мои видео вам понравились. Конечно и мне хотелось бы почаще что-то снимать, но эта деятельность проходит в формате увлечения, а остальное время занимает обычная жизнь с работой и прочими скучными делами. Но могу заверить, на этом канале будут появляться видео в любом случае, возможно с перерывами, но канал живой и копать я не перестаю год от года🙂",
+              "parentId": "UgwChVpt7WHK9_n8btB4AaABAg",
+              "authorDisplayName": "Находки с грядки",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKaKPkaX9cu-0ghMWev3uK8S5DL-lsZHP45IqSdTTA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "authorChannelId": {
+                "value": "UCbR_XE_Jp_wCnm_bKDA-tYg"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2023-06-12T16:29:07Z",
+              "updatedAt": "2023-06-12T16:29:07Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "tJ4Z-vlTwLJxa-Vk40MuthJ6EVw",
+      "id": "Ugz3IDsbp7dowX_43614AaABAg",
+      "snippet": {
+        "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+        "videoId": "_94dSVxTW80",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "uuWdz9zHgM0XdICpDrFvaBw-w34",
+          "id": "Ugz3IDsbp7dowX_43614AaABAg",
+          "snippet": {
+            "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+            "videoId": "_94dSVxTW80",
+            "textDisplay": "я на поверхности находил монетки )",
+            "textOriginal": "я на поверхности находил монетки )",
+            "authorDisplayName": "ILYA BOGROV",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/jDsUSMrkXgYbPCIE8gt3hqYYjEaEd286QP9ep9F6hZr-abYrUEiHG62YBEXj4DMjXJb6_L9G6g=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCm4BPogdtladBvbKoQ2xQEg",
+            "authorChannelId": {
+              "value": "UCm4BPogdtladBvbKoQ2xQEg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2023-06-11T14:33:31Z",
+            "updatedAt": "2023-06-11T14:33:31Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "lftrZkteCnzt1WdVG_0ejv_FZWk",
+            "id": "Ugz3IDsbp7dowX_43614AaABAg.9qp89CVnRKs9qrw3Z0Mvhy",
+            "snippet": {
+              "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "videoId": "_94dSVxTW80",
+              "textDisplay": "Бывает и такое)",
+              "textOriginal": "Бывает и такое)",
+              "parentId": "Ugz3IDsbp7dowX_43614AaABAg",
+              "authorDisplayName": "Находки с грядки",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKaKPkaX9cu-0ghMWev3uK8S5DL-lsZHP45IqSdTTA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "authorChannelId": {
+                "value": "UCbR_XE_Jp_wCnm_bKDA-tYg"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2023-06-12T16:36:52Z",
+              "updatedAt": "2023-06-12T16:36:52Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "7hvbYE-hdEic-Pl8u6jM2SH7ktI",
+      "id": "UgzATag3900IYK2btKl4AaABAg",
+      "snippet": {
+        "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+        "videoId": "_94dSVxTW80",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "huu68T6sPrJkx240vbiv0XdU_L0",
+          "id": "UgzATag3900IYK2btKl4AaABAg",
+          "snippet": {
+            "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+            "videoId": "_94dSVxTW80",
+            "textDisplay": "Вазелин помогает законсервировать монету?",
+            "textOriginal": "Вазелин помогает законсервировать монету?",
+            "authorDisplayName": "MaksiM VinS",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKY-kWlXnoD2N82YPpTRCGUEBqoqLoJ_hbi42mMb=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCL4L_kwu90Hapq1VBVw8k1g",
+            "authorChannelId": {
+              "value": "UCL4L_kwu90Hapq1VBVw8k1g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2023-06-10T18:18:53Z",
+            "updatedAt": "2023-06-10T18:18:53Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "Xm1VxIziCsch6dDkD3frm5dSDbg",
+            "id": "UgzATag3900IYK2btKl4AaABAg.9qmy8zUEwaq9qrvl_2FCZn",
+            "snippet": {
+              "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "videoId": "_94dSVxTW80",
+              "textDisplay": "Препятствует доступу воздуха, останавливает процессы окисления, выкопанной монете не даёт высохнуть и потерять нестабильную патину. Позднее реставратор удаляет вазелин и проводит необходимые манипуляции по закреплению патины и консервации монеты.",
+              "textOriginal": "Препятствует доступу воздуха, останавливает процессы окисления, выкопанной монете не даёт высохнуть и потерять нестабильную патину. Позднее реставратор удаляет вазелин и проводит необходимые манипуляции по закреплению патины и консервации монеты.",
+              "parentId": "UgzATag3900IYK2btKl4AaABAg",
+              "authorDisplayName": "Находки с грядки",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKaKPkaX9cu-0ghMWev3uK8S5DL-lsZHP45IqSdTTA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "authorChannelId": {
+                "value": "UCbR_XE_Jp_wCnm_bKDA-tYg"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2023-06-12T16:34:16Z",
+              "updatedAt": "2023-06-12T16:34:16Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "U7S-UMzoR0glzz1eV148yaGPqNc",
+      "id": "UgzlpHUQnvjGSmmlIeF4AaABAg",
+      "snippet": {
+        "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+        "videoId": "_94dSVxTW80",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "xFAp_RSp2RQdsvyQbTQYNs-8Q18",
+          "id": "UgzlpHUQnvjGSmmlIeF4AaABAg",
+          "snippet": {
+            "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+            "videoId": "_94dSVxTW80",
+            "textDisplay": "Доброго Михаил!<br>Хорошая поездка получилась,душевная.<br>У Деуса,хорошое<br>разделение,неоднократно убеждался.<br>Процветания каналу,удачи в поиске!<br>п.с. а на соседнем фундике мой &quot;массонский&quot; пятачёк 😊👍🍀",
+            "textOriginal": "Доброго Михаил!\nХорошая поездка получилась,душевная.\nУ Деуса,хорошое\nразделение,неоднократно убеждался.\nПроцветания каналу,удачи в поиске!\nп.с. а на соседнем фундике мой \"массонский\" пятачёк 😊👍🍀",
+            "authorDisplayName": "Клевер.Поиск с металлодетектором.",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/nOV2dys2_EsIJ6OWVfncxN8Xuhw8FWoUKXWmp78ubx9QurZahbtWECXud3iHCqQH-8zYe6PRaw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCbkjVjnrLkmnLRrbt41nbqQ",
+            "authorChannelId": {
+              "value": "UCbkjVjnrLkmnLRrbt41nbqQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2023-06-08T23:02:52Z",
+            "updatedAt": "2023-06-08T23:02:52Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "-SjhLKkQQbv1oU9q1TOz833U9Lk",
+            "id": "UgzlpHUQnvjGSmmlIeF4AaABAg.9qiK3BTfDtK9qrz38hWPiZ",
+            "snippet": {
+              "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "videoId": "_94dSVxTW80",
+              "textDisplay": "@Находки с грядки Согласен! 😊👍🍀",
+              "textOriginal": "@Находки с грядки Согласен! 😊👍🍀",
+              "parentId": "UgzlpHUQnvjGSmmlIeF4AaABAg",
+              "authorDisplayName": "Клевер.Поиск с металлодетектором.",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/nOV2dys2_EsIJ6OWVfncxN8Xuhw8FWoUKXWmp78ubx9QurZahbtWECXud3iHCqQH-8zYe6PRaw=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCbkjVjnrLkmnLRrbt41nbqQ",
+              "authorChannelId": {
+                "value": "UCbkjVjnrLkmnLRrbt41nbqQ"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2023-06-12T17:03:01Z",
+              "updatedAt": "2023-06-12T17:03:01Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "mf-v2wOP3Pmli8TO3h2viFJdxVo",
+            "id": "UgzlpHUQnvjGSmmlIeF4AaABAg.9qiK3BTfDtK9qrw841zeTW",
+            "snippet": {
+              "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "videoId": "_94dSVxTW80",
+              "textDisplay": "Все поездки в этом сезоне получились хорошими)",
+              "textOriginal": "Все поездки в этом сезоне получились хорошими)",
+              "parentId": "UgzlpHUQnvjGSmmlIeF4AaABAg",
+              "authorDisplayName": "Находки с грядки",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKaKPkaX9cu-0ghMWev3uK8S5DL-lsZHP45IqSdTTA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "authorChannelId": {
+                "value": "UCbR_XE_Jp_wCnm_bKDA-tYg"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2023-06-12T16:37:29Z",
+              "updatedAt": "2023-06-12T16:37:29Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "HKejOZ0T_6QbMMmphcPNTiXU7yg",
+      "id": "UgzwnJu2LECcuupfs8Z4AaABAg",
+      "snippet": {
+        "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+        "videoId": "_94dSVxTW80",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "YrzVSIPpBwI0rbRWZnz77RNhaBk",
+          "id": "UgzwnJu2LECcuupfs8Z4AaABAg",
+          "snippet": {
+            "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+            "videoId": "_94dSVxTW80",
+            "textDisplay": "Блин 🥞, так классно походили покопали 👍.<br>Удачных находок Вам ✊",
+            "textOriginal": "Блин 🥞, так классно походили покопали 👍.\nУдачных находок Вам ✊",
+            "authorDisplayName": "Камские Дебри",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKb0qOUCZEcY7jP-5_NBcoV7NuhRyKJGaHlEVhq6=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCYg05ZBAveuhZfXDEBdZQUw",
+            "authorChannelId": {
+              "value": "UCYg05ZBAveuhZfXDEBdZQUw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3,
+            "publishedAt": "2023-06-07T18:33:10Z",
+            "updatedAt": "2023-06-07T18:33:10Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "1VEl7YjAo448ooFMfrHfaA4ouKA",
+            "id": "UgzwnJu2LECcuupfs8Z4AaABAg.9qfGP0OvE_h9qrwKvrlII1",
+            "snippet": {
+              "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "videoId": "_94dSVxTW80",
+              "textDisplay": "Привет, спасибо! Да, время провели отлично👍",
+              "textOriginal": "Привет, спасибо! Да, время провели отлично👍",
+              "parentId": "UgzwnJu2LECcuupfs8Z4AaABAg",
+              "authorDisplayName": "Находки с грядки",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKaKPkaX9cu-0ghMWev3uK8S5DL-lsZHP45IqSdTTA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "authorChannelId": {
+                "value": "UCbR_XE_Jp_wCnm_bKDA-tYg"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2023-06-12T16:39:14Z",
+              "updatedAt": "2023-06-12T16:39:14Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "v0T-asq2Ne8mVuSTrMsJnLh_2Oc",
+      "id": "Ugw1_VbymSfIzjBiIQt4AaABAg",
+      "snippet": {
+        "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+        "videoId": "_94dSVxTW80",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "BYFt6qPCSbe0cx8v8vjcs6qI634",
+          "id": "Ugw1_VbymSfIzjBiIQt4AaABAg",
+          "snippet": {
+            "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+            "videoId": "_94dSVxTW80",
+            "textDisplay": "У всех небитые места, а на форумах жалуются, что всё Выбито👍🤣🤣",
+            "textOriginal": "У всех небитые места, а на форумах жалуются, что всё Выбито👍🤣🤣",
+            "authorDisplayName": "Cheburnet Vatrushkin",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKZLXvoYTzRZo1bgSHWHgjum12-PnvCdM8k6m4nhls9wE_hmKtM8F1TNeRglx56y=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UC9Jx1t3XOeTA82f5a3n6dfQ",
+            "authorChannelId": {
+              "value": "UC9Jx1t3XOeTA82f5a3n6dfQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 4,
+            "publishedAt": "2023-06-07T17:31:34Z",
+            "updatedAt": "2023-06-07T17:31:34Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "-Z7mnAyYMcl_MBX5HgwPcFz6wNE",
+            "id": "Ugw1_VbymSfIzjBiIQt4AaABAg.9qf9LpJuH1Z9qrxQQanZLK",
+            "snippet": {
+              "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "videoId": "_94dSVxTW80",
+              "textDisplay": "@Находки с грядки 10 лет назад тоже было уже выбито всё 🤣 все точно так же ныли как и сейчас😂",
+              "textOriginal": "@Находки с грядки 10 лет назад тоже было уже выбито всё 🤣 все точно так же ныли как и сейчас😂",
+              "parentId": "Ugw1_VbymSfIzjBiIQt4AaABAg",
+              "authorDisplayName": "Cheburnet Vatrushkin",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKZLXvoYTzRZo1bgSHWHgjum12-PnvCdM8k6m4nhls9wE_hmKtM8F1TNeRglx56y=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UC9Jx1t3XOeTA82f5a3n6dfQ",
+              "authorChannelId": {
+                "value": "UC9Jx1t3XOeTA82f5a3n6dfQ"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2023-06-12T16:48:43Z",
+              "updatedAt": "2023-06-12T16:48:43Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "H-hMTJcNbs0MWdZ96dQSpPuLd5A",
+            "id": "Ugw1_VbymSfIzjBiIQt4AaABAg.9qf9LpJuH1Z9qrwws8BWAQ",
+            "snippet": {
+              "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "videoId": "_94dSVxTW80",
+              "textDisplay": "Тут смотря с чем сравнивать. За тот день мы нашли пару нетронутых участков. А проехали наверно штук пять урочищ. И это количество нетронутых клочков земли год от года уменьшается. По сравнению с тем, что было 10 лет назад, я могу сказать - почти всё выбито. А кто копает 20 лет мне говорят, что приборный поиск уже мёртв как явление🤔",
+              "textOriginal": "Тут смотря с чем сравнивать. За тот день мы нашли пару нетронутых участков. А проехали наверно штук пять урочищ. И это количество нетронутых клочков земли год от года уменьшается. По сравнению с тем, что было 10 лет назад, я могу сказать - почти всё выбито. А кто копает 20 лет мне говорят, что приборный поиск уже мёртв как явление🤔",
+              "parentId": "Ugw1_VbymSfIzjBiIQt4AaABAg",
+              "authorDisplayName": "Находки с грядки",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKaKPkaX9cu-0ghMWev3uK8S5DL-lsZHP45IqSdTTA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "authorChannelId": {
+                "value": "UCbR_XE_Jp_wCnm_bKDA-tYg"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2023-06-12T16:44:33Z",
+              "updatedAt": "2023-06-12T16:44:33Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "0qW6UX5GOJm5H5ywBkNyFvjuZss",
+      "id": "UgxuL7_8mhbDP2-Frcx4AaABAg",
+      "snippet": {
+        "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+        "videoId": "_94dSVxTW80",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "y8Vu8_SpSMpFgrYqfT8R2TBeOTw",
+          "id": "UgxuL7_8mhbDP2-Frcx4AaABAg",
+          "snippet": {
+            "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+            "videoId": "_94dSVxTW80",
+            "textDisplay": "Отличный выход 👍 10 копеек масоны только один раз за 15 сезонов находил. Икона и медаль  так вообще 🔥",
+            "textOriginal": "Отличный выход 👍 10 копеек масоны только один раз за 15 сезонов находил. Икона и медаль  так вообще 🔥",
+            "authorDisplayName": "Спорный сигнал. Подмосковный коп.",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/YxZq1k8k7vO_sklvQeYG2z1UNk-BDRYI5TviJAlUuJbrPUuVaz3fgjsh506xJLkNGhXAybx5tXs=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCqnZi1ZKGXmec_7d5BDmLuA",
+            "authorChannelId": {
+              "value": "UCqnZi1ZKGXmec_7d5BDmLuA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2023-06-07T12:19:38Z",
+            "updatedAt": "2023-06-07T12:19:38Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "MwCSrLuGQuUy6ozbRCxFIm4jWqQ",
+            "id": "UgxuL7_8mhbDP2-Frcx4AaABAg.9qeae9FWFQ69qrx9fUKCfb",
+            "snippet": {
+              "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "videoId": "_94dSVxTW80",
+              "textDisplay": "У меня самого их пару штук только) В этот раз действительно комбо вылетело, сразу три интересных находки за выезд.",
+              "textOriginal": "У меня самого их пару штук только) В этот раз действительно комбо вылетело, сразу три интересных находки за выезд.",
+              "parentId": "UgxuL7_8mhbDP2-Frcx4AaABAg",
+              "authorDisplayName": "Находки с грядки",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKaKPkaX9cu-0ghMWev3uK8S5DL-lsZHP45IqSdTTA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "authorChannelId": {
+                "value": "UCbR_XE_Jp_wCnm_bKDA-tYg"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2023-06-12T16:46:26Z",
+              "updatedAt": "2023-06-12T16:46:26Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Qq4XYFp2pL06RfD1qqCm9dn9bNA",
+      "id": "UgzOqi3VwxFHAUo3zA14AaABAg",
+      "snippet": {
+        "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+        "videoId": "_94dSVxTW80",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "4OW459mIEUdIWhmKfeoJJi8wExU",
+          "id": "UgzOqi3VwxFHAUo3zA14AaABAg",
+          "snippet": {
+            "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+            "videoId": "_94dSVxTW80",
+            "textDisplay": "понравился коп, грамотная, хорошая речь, подписалась, удачи вам))",
+            "textOriginal": "понравился коп, грамотная, хорошая речь, подписалась, удачи вам))",
+            "authorDisplayName": "Наталья Федорова",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ZseU-Qp_uUbKt_uph6XVSOrcyshA75s6oL5a1bH8PeorEa_WrGvl5qsQfYfBXJdX5fbjeBlgPGI=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCumDdUcm7d_ahEI7_t8E54w",
+            "authorChannelId": {
+              "value": "UCumDdUcm7d_ahEI7_t8E54w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3,
+            "publishedAt": "2023-06-06T20:15:07Z",
+            "updatedAt": "2023-06-06T20:15:07Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "yeSkJGOKEjXKBjwjEGt3mL_r2cc",
+            "id": "UgzOqi3VwxFHAUo3zA14AaABAg.9qcsGr746aZ9qrxPhuW9Dh",
+            "snippet": {
+              "channelId": "UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "videoId": "_94dSVxTW80",
+              "textDisplay": "Здравствуйте, спасибо за ваш отзыв. Всегда стараюсь следить за тем, что говорю)",
+              "textOriginal": "Здравствуйте, спасибо за ваш отзыв. Всегда стараюсь следить за тем, что говорю)",
+              "parentId": "UgzOqi3VwxFHAUo3zA14AaABAg",
+              "authorDisplayName": "Находки с грядки",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/APkrFKaKPkaX9cu-0ghMWev3uK8S5DL-lsZHP45IqSdTTA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCbR_XE_Jp_wCnm_bKDA-tYg",
+              "authorChannelId": {
+                "value": "UCbR_XE_Jp_wCnm_bKDA-tYg"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 2,
+              "publishedAt": "2023-06-12T16:48:38Z",
+              "updatedAt": "2023-06-12T16:48:38Z"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
