@@ -35,14 +35,14 @@ class TopLevelCommentSnippetModel extends TopLevelCommentSnippetEntity{
   );
 
   factory TopLevelCommentSnippetModel.fromJson(Map<String, dynamic> json) => TopLevelCommentSnippetModel(
-    channelId: json["channelId"],
-    videoId: json["videoId"],
-    textDisplay: json["textDisplay"],
-    textOriginal: json["textOriginal"],
-    parentId: json["parentId"],
-    authorDisplayName: json["authorDisplayName"],
-    authorProfileImageUrl: json["authorProfileImageUrl"],
-    authorChannelUrl: json["authorChannelUrl"],
+    channelId: json["channelId"] as String? ?? '',
+    videoId: json["videoId"] as String? ?? '',
+    textDisplay: json["textDisplay"] as String? ?? '',
+    textOriginal: json["textOriginal"] as String? ?? '',
+    parentId: json["parentId"] as String? ?? '',
+    authorDisplayName: json["authorDisplayName"] as String? ?? '',
+    authorProfileImageUrl: json["authorProfileImageUrl"] as String? ?? '',
+    authorChannelUrl: json["authorChannelUrl"] as String? ?? '',
     authorChannelId: AuthorChannelIdModel.fromJson(json["authorChannelId"]),
     canRate: json["canRate"],
     viewerRating: json["viewerRating"],

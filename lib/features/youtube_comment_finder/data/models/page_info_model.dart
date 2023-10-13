@@ -1,4 +1,5 @@
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/page_info_entity.dart';
+import 'package:json_annotation/json_annotation.dart';
 
 class PageInfoModel extends PageInfoEntity{
  const PageInfoModel({

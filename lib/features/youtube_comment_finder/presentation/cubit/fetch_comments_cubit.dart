@@ -30,8 +30,8 @@ class FetchCommentsCubit extends Cubit<MyState> {
       emit(ErrorState());
       throw UnimplementedError();
     }
-    commentsList.add(failureOrComments as CommentThreadEntity);
-    if((failureOrComments).nextPageToken == ''){
+   // commentsList.add(failureOrComments as CommentThreadEntity);
+    /*if((failureOrComments).nextPageToken == ''){
       //:TODO --------------
     }else{
       String nextPagToken = failureOrComments.nextPageToken;
@@ -46,7 +46,7 @@ class FetchCommentsCubit extends Cubit<MyState> {
       }
     }
     print(commentsList.length);
-
+*/
 
   }
 

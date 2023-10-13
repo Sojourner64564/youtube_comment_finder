@@ -9,10 +9,10 @@ import 'package:http/http.dart' as http;
 @LazySingleton(as: CommentThreadRemoteDataSource)
 class CommentThreadRemoteDataSourceImpl implements CommentThreadRemoteDataSource{
   @override
-  Future<CommentThreadModel> fetchComments() async{
+  Future<CommentThreadModel> fetchComments() async{ // _HebGGHVaZI - 1 коммент _94dSVxTW80 - много комментов
     final response = await http.get(
       Uri.parse(
-          'https://www.googleapis.com/youtube/v3/commentThreads?key=AIzaSyAwN8yc4ittxrac_rhW4swd63odvZbHRD8&part=snippet,replies&videoId=_94dSVxTW80'),
+          'https://www.googleapis.com/youtube/v3/commentThreads?key=AIzaSyAwN8yc4ittxrac_rhW4swd63odvZbHRD8&part=snippet,replies&videoId=_HebGGHVaZI'),
       headers: {'Content-Type': 'application/json'},
     );
     if (response.statusCode == 200) {

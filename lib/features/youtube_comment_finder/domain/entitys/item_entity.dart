@@ -1,6 +1,9 @@
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/item_snippet_entity.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/replies_entity.dart';
+import 'package:json_annotation/json_annotation.dart';
+part 'item_entity.g.dart';
 
+@JsonSerializable(explicitToJson: true)
 class ItemEntity {
   final String kind;
   final String etag;
