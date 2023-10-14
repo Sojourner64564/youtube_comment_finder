@@ -12,11 +12,24 @@ class ItemModel extends ItemEntity{
     required RepliesModel replies,
   }) : super(kind: kind, etag: etag, id: id, itemSnippet: itemSnippet, replies: replies);
 
-  factory ItemModel.fromJson(Map<String, dynamic> json) => ItemModel(
+  /*factory ItemModel.fromJson(Map<String, dynamic> json) => ItemModel(
     kind: json["kind"],
     etag: json["etag"],
     id: json["id"],
     itemSnippet: ItemSnippetModel.fromJson(json["snippet"]),
     replies: RepliesModel.fromJson(json["replies"]),
+  );*/
+
+  factory ItemModel.fromJson(Map<String, dynamic> json) => ItemModel(
+    kind: json['kind'] as String? ?? '',
+    etag: json['etag'] as String? ?? '',
+    id: json['id'] as String? ?? '',
+    itemSnippet: json['snippet'] == null
+        ?  ItemSnippetModel()
+        : ItemSnippetModel.fromJson(
+        json['snippet'] as Map<String, dynamic>),
+    replies: json['replies'] == null
+        ?  RepliesModel()
+        : RepliesModel.fromJson(json['replies'] as Map<String, dynamic>),
   );
 }

@@ -1,10 +1,12 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
+import 'package:youtube_comment_finder/features/youtube_comment_finder/data/models/comment_thread_model.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/comment_thread_entity.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/usecase/params/no_params.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/usecase/params/params.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/usecase/use_case_comment_thread_impl.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/usecase/use_case_comment_thread_pager_impl.dart';
+import 'package:youtube_comment_finder/random_shit/you.dart';
 part 'fetch_comments_state.dart';
 
 @lazySingleton
@@ -30,6 +32,8 @@ class FetchCommentsCubit extends Cubit<MyState> {
       emit(ErrorState());
       throw UnimplementedError();
     }
+    print((failureOrComments as CommentThreadModel).pageInfo.totalResults);
+   // print(failureOrComments.items[0].id);
    // commentsList.add(failureOrComments as CommentThreadEntity);
     /*if((failureOrComments).nextPageToken == ''){
       //:TODO --------------

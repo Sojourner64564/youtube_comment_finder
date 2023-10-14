@@ -5,10 +5,18 @@ import 'package:json_annotation/json_annotation.dart';
 class RepliesModel extends RepliesEntity{
 
   RepliesModel({
-    required List<CommentModel> comments,
+     comments,
   }) : super(comments: comments);
 
-  factory RepliesModel.fromJson(Map<String, dynamic> json) => RepliesModel(
+  /*factory RepliesModel.fromJson(Map<String, dynamic> json) => RepliesModel(
     comments: List<CommentModel>.from(json["comments"].map((x) => CommentModel.fromJson(x))),
-  );
+  );*/
+
+  factory RepliesModel.fromJson(Map<String, dynamic> json) =>
+      RepliesModel(
+        comments: (json['comments'] as List<dynamic>?)
+            ?.map((e) => CommentModel.fromJson(e as Map<String, dynamic>))
+            .toList() ??
+            const [],
+      );
 }

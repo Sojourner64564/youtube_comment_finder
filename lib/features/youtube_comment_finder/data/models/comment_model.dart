@@ -2,17 +2,28 @@ import 'package:youtube_comment_finder/features/youtube_comment_finder/data/mode
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/comment_entity.dart';
 
 class CommentModel extends CommentEntity{
-  CommentModel({
-    required String kind,
-    required String etag,
-    required String id,
-    required TopLevelCommentSnippetModel snippet,
+ const CommentModel({
+      kind,
+      etag,
+      id,
+      snippet,
   }) : super(kind: kind, etag: etag, id: id, snippet: snippet);
 
-  factory CommentModel.fromJson(Map<String, dynamic> json) => CommentModel(
+ /* factory CommentModel.fromJson(Map<String, dynamic> json) => CommentModel(
     kind: json["kind"],
     etag: json["etag"],
     id: json["id"],
     snippet: TopLevelCommentSnippetModel.fromJson(json["snippet"]),
-  );
+  );*/
+
+  factory CommentModel.fromJson(Map<String, dynamic> json) =>
+      CommentModel(
+        kind: json['kind'] as String? ?? '',
+        etag: json['etag'] as String? ?? '',
+        id: json['id'] as String? ?? '',
+        snippet: json['snippet'] == null
+            ? TopLevelCommentSnippetModel()
+            : TopLevelCommentSnippetModel.fromJson(
+            json['snippet'] as Map<String, dynamic>),
+      );
 }
