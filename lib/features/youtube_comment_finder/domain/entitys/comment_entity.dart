@@ -1,6 +1,6 @@
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/top_level_comment_snippet_entity.dart';
 import 'package:json_annotation/json_annotation.dart';
-part 'comment_entity.g.dart';
+
 
 @JsonSerializable(explicitToJson: true)
 class CommentEntity {

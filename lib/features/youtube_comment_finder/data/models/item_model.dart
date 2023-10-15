@@ -2,6 +2,7 @@
 import 'package:youtube_comment_finder/features/youtube_comment_finder/data/models/item_snippet_model.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/data/models/replies_model.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/item_entity.dart';
+import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/replies_entity.dart';
 
 class ItemModel extends ItemEntity{
   ItemModel({
@@ -9,7 +10,7 @@ class ItemModel extends ItemEntity{
     required String etag,
     required String id,
     required ItemSnippetModel itemSnippet,
-    required RepliesModel replies,
+    required  replies,
   }) : super(kind: kind, etag: etag, id: id, itemSnippet: itemSnippet, replies: replies);
 
   /*factory ItemModel.fromJson(Map<String, dynamic> json) => ItemModel(
@@ -29,7 +30,7 @@ class ItemModel extends ItemEntity{
         : ItemSnippetModel.fromJson(
         json['snippet'] as Map<String, dynamic>),
     replies: json['replies'] == null
-        ?  RepliesModel()
+        ?  const RepliesEntity()
         : RepliesModel.fromJson(json['replies'] as Map<String, dynamic>),
   );
 }

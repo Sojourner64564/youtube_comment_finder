@@ -28,7 +28,7 @@ import '../../features/youtube_comment_finder/domain/usecase/use_case_comment_th
     as _i14;
 import '../../features/youtube_comment_finder/domain/usecase/use_case_comment_thread_pager_impl.dart'
     as _i15;
-import '../../features/youtube_comment_finder/presentation/cubit/fetch_comments_cubit.dart'
+import '../../features/youtube_comment_finder/presentation/cubit/fetch_comments_cubit/fetch_comments_cubit.dart'
     as _i16;
 import '../data_sources/comment_thread_pager_remote_data_source.dart' as _i3;
 import '../data_sources/comment_thread_remote_data_source.dart' as _i5;

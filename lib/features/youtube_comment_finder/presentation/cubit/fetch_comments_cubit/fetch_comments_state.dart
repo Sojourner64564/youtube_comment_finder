@@ -6,9 +6,9 @@ class InitialState extends MyState {}
 class LoadingState extends MyState {}
 
 class LoadedState extends MyState {
-  final String html;
+  final List<CommentAndReplyStateModel> commentList;
 
-  LoadedState(this.html);
+  LoadedState(this.commentList);
 }
 
 class ErrorState extends MyState {}
