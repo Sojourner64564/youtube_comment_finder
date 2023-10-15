@@ -6,7 +6,7 @@ class InitialState extends MyState {}
 class LoadingState extends MyState {}
 
 class LoadedState extends MyState {
-  final List<CommentAndReplyStateModel> commentList;
+  final List<ItemEntity> commentList;
 
   LoadedState(this.commentList);
 }
