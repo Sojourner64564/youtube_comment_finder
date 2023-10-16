@@ -10,28 +10,30 @@ import 'package:injectable/injectable.dart' as _i2;
 import 'package:internet_connection_checker/internet_connection_checker.dart'
     as _i7;
 
-import '../../features/youtube_comment_finder/data/data_sources/comment_thread_pager_remote_data_source_impl.dart'
+import '../../features/youtube_comment_finder/data/data_sources/comment_thread_data_source/comment_thread_pager_remote_data_source_impl.dart'
     as _i4;
-import '../../features/youtube_comment_finder/data/data_sources/comment_thread_remote_data_source_impl.dart'
+import '../../features/youtube_comment_finder/data/data_sources/comment_thread_data_source/comment_thread_remote_data_source_impl.dart'
     as _i6;
 import '../../features/youtube_comment_finder/data/network/network_info_impl.dart'
     as _i9;
-import '../../features/youtube_comment_finder/data/repository/comment_thread_pager_repository_impl.dart'
+import '../../features/youtube_comment_finder/data/repository/comment_thread_repository_impl/comment_thread_pager_repository_impl.dart'
     as _i11;
-import '../../features/youtube_comment_finder/data/repository/comment_thread_repository_impl.dart'
+import '../../features/youtube_comment_finder/data/repository/comment_thread_repository_impl/comment_thread_repository_impl.dart'
     as _i13;
-import '../../features/youtube_comment_finder/domain/repository/comment_thread_pager_repository.dart'
+import '../../features/youtube_comment_finder/domain/repository/comment_thread_repository/comment_thread_pager_repository.dart'
     as _i10;
-import '../../features/youtube_comment_finder/domain/repository/comment_thread_repository.dart'
+import '../../features/youtube_comment_finder/domain/repository/comment_thread_repository/comment_thread_repository.dart'
     as _i12;
-import '../../features/youtube_comment_finder/domain/usecase/use_case_comment_thread_impl.dart'
+import '../../features/youtube_comment_finder/domain/usecase/use_case_comment_thread_impl/use_case_comment_thread_impl.dart'
     as _i14;
-import '../../features/youtube_comment_finder/domain/usecase/use_case_comment_thread_pager_impl.dart'
+import '../../features/youtube_comment_finder/domain/usecase/use_case_comment_thread_impl/use_case_comment_thread_pager_impl.dart'
     as _i15;
 import '../../features/youtube_comment_finder/presentation/cubit/fetch_comments_cubit/fetch_comments_cubit.dart'
     as _i16;
-import '../data_sources/comment_thread_pager_remote_data_source.dart' as _i3;
-import '../data_sources/comment_thread_remote_data_source.dart' as _i5;
+import '../data_sources/comment_thread_data_source/comment_thread_pager_remote_data_source.dart'
+    as _i3;
+import '../data_sources/comment_thread_data_source/comment_thread_remote_data_source.dart'
+    as _i5;
 import '../network/network_info.dart' as _i8;
 import 'injectable.dart' as _i17; // ignore_for_file: unnecessary_lambdas
 

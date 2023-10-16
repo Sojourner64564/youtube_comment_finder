@@ -1,0 +1,7 @@
+import 'package:youtube_comment_finder/features/youtube_comment_finder/data/models/comment_thread_model/comment_thread_model.dart';
+import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/usecase/params/params.dart';
+import 'package:youtube_comment_finder/random_shit/you.dart';
+
+abstract class CommentThreadPagerRemoteDataSource{
+  Future<CommentThreadModel> fetchComments(Params params);
+}
