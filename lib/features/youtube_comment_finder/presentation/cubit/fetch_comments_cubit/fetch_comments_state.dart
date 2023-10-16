@@ -7,8 +7,8 @@ class LoadingState extends MyState {}
 
 class LoadedState extends MyState {
   final List<ItemEntity> commentList;
-
-  LoadedState(this.commentList);
+  final List<List<ItemRepliesEntity>> repliesList;
+  LoadedState(this.commentList, this.repliesList);
 }
 
 class ErrorState extends MyState {}
