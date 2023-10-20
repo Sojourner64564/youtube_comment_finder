@@ -17,14 +17,6 @@ class CommentThreadModel extends CommentThreadEntity{
     items: items
   );
 
-  /*factory CommentThreadModel.fromJson(Map<String, dynamic> json) => CommentThreadModel(
-    kind: json["kind"],
-    etag: json["etag"],
-    nextPageToken: json['nextPageToken'],
-    pageInfo: PageInfoModel.fromJson(json["pageInfo"]),
-    items: List<ItemModel>.from(json["items"].map((x) => ItemModel.fromJson(x))),
-  );*/
-
   factory CommentThreadModel.fromJson(Map<String, dynamic> json) =>
        CommentThreadModel(
         kind: json['kind'] as String? ?? '',

@@ -1,3 +1,4 @@
+import 'package:injectable/injectable.dart';
 import 'package:youtube_comment_finder/core/data_sources/comment_replies_data_source/comment_replies_pager_remote_data_source.dart';
 import 'package:youtube_comment_finder/core/error/failure.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/data/models/comment_replies_model/comment_replies_model.dart';
@@ -5,6 +6,7 @@ import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/us
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
+@LazySingleton(as: CommentRepliesPagerRemoteDataSource)
 class CommentRepliesPagerRemoteDataSourceImpl implements CommentRepliesPagerRemoteDataSource{
   @override
   Future<CommentRepliesModel> fetchReplies(CommentRepliesParams commentRepliesParams) async {

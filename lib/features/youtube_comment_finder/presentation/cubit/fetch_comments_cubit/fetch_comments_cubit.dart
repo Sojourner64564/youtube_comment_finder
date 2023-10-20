@@ -39,11 +39,46 @@ class FetchCommentsCubit extends Cubit<MyState> {
     if((failureOrComments).nextPageToken == ''){
       final itemList = commentsList.expand((element) => element.items).toList();
 
+      List<ItemRepliesEntity> itemRepliesListTwo = [];
+      final List<List<ItemRepliesEntity>> listOfListsTwo = [];
+      final listToExpandTwo = <List<ItemRepliesEntity>>[];
+
+
       for(int i=0;i<itemList.length;i++){
         final parentId = itemList[i].id;
+        final failureOrCommentRepliesEither = await useCaseCommentRepliesImpl.call(CommentRepliesParams(parentId: parentId));
+        final failureOrCommentReplies = failureOrCommentRepliesEither.fold((failure) => ErrorState(), (commentReplies) => commentReplies);
+        if(failureOrCommentReplies is ErrorState){
+          emit(ErrorState());
+        }///_---------------------
+        if((failureOrCommentReplies as CommentRepliesEntity).items.isNotEmpty){
+          if(failureOrCommentReplies.nextPageToken == ''){
+            itemRepliesListTwo = failureOrCommentReplies.items;
+           // print(failureOrCommentReplies.items[0].snippet.textOriginal);
+            listOfListsTwo.add(itemRepliesListTwo);
+            ///TODO ------------
+          }else{
+            String nextPageReplyToken = failureOrCommentReplies.nextPageToken;
+            while(nextPageReplyToken != ''){
+              final failureOrCommentRepliesPagerEither = await useCaseCommentRepliesPagerImpl.call(CommentRepliesParams(parentId: parentId, pageToken: nextPageReplyToken));
+              final failureOrCommentRepliesPager = failureOrCommentRepliesPagerEither.fold((failure) => ErrorState(), (commentReplies) => commentReplies);
+              if(failureOrCommentRepliesPager is ErrorState){
+                emit(ErrorState());
+              }
+              listToExpandTwo.add((failureOrCommentRepliesPager as CommentRepliesEntity).items);
+            }
+            itemRepliesListTwo = listToExpandTwo.expand((element) => element).toList();
+            listOfListsTwo.add(itemRepliesListTwo);
 
+          }
+        }else{
+          listOfListsTwo.add([]);
+        }
       }
-      emit(LoadedState(itemList));///TODO----------
+      print(listOfListsTwo);
+      //print(listOfListsTwo[1][0].snippet.textOriginal.toString() + '----------');
+      emit(LoadedState(itemList, listOfListsTwo));///TODO----------
+      ///
     }else{
       String nextPagToken = failureOrComments.nextPageToken;
       while(nextPagToken != ''){
@@ -59,6 +94,7 @@ class FetchCommentsCubit extends Cubit<MyState> {
 
 
       final itemList = commentsList.expand((element) => element.items).toList();
+
       final List<List<ItemRepliesEntity>> listOfLists = [];
       List<ItemRepliesEntity> itemRepliesList = [];
       final listToExpand = <List<ItemRepliesEntity>>[];
@@ -73,6 +109,8 @@ class FetchCommentsCubit extends Cubit<MyState> {
         }
         if((failureOrCommentReplies as CommentRepliesEntity).items.isNotEmpty){
           if(failureOrCommentReplies.nextPageToken == ''){
+            itemRepliesList = failureOrCommentReplies.items;
+            listOfLists.add(itemRepliesList);
               ///TODO ------------
           }else{
             String nextPageReplyToken = failureOrCommentReplies.nextPageToken;
@@ -84,13 +122,14 @@ class FetchCommentsCubit extends Cubit<MyState> {
               }
               listToExpand.add((failureOrCommentRepliesPager as CommentRepliesEntity).items);
             }
+            itemRepliesList = listToExpand.expand((element) => element).toList();
+            listOfLists.add(itemRepliesList);
+
           }
         }else{
           listOfLists.add([]);
         }
       }
-      itemRepliesList = listToExpand.expand((element) => element).toList();
-      listOfLists.add(itemRepliesList);
       emit(LoadedState(itemList, listOfLists));
     }
   }

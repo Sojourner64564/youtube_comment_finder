@@ -1,3 +1,5 @@
+import 'package:youtube_comment_finder/features/youtube_comment_finder/data/models/comment_replies_model/author_channel_id_replies_model.dart';
+import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/comment_replies_entity/author_channel_id_replies_entity.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/comment_replies_entity/snippet_entity.dart';
 
 class SnippetModel extends SnippetEntity{
@@ -9,7 +11,7 @@ class SnippetModel extends SnippetEntity{
     authorDisplayName,
     authorProfileImageUrl,
     authorChannelUrl,
-    authorChannelId,
+    authorChannelIdReplies,
     canRate,
     viewerRating,
     likeCount,
@@ -17,13 +19,13 @@ class SnippetModel extends SnippetEntity{
     updatedAt,
 }):super(
     channelId: channelId,
-    textDisplay: textOriginal,
+    textDisplay: textDisplay,
     textOriginal: textOriginal,
     parentId: parentId,
     authorDisplayName: authorDisplayName,
     authorProfileImageUrl: authorProfileImageUrl,
     authorChannelUrl: authorChannelUrl,
-    authorChannelId: authorChannelId,
+    authorChannelIdReplies: authorChannelIdReplies,
     canRate: canRate,
     viewerRating: viewerRating,
     likeCount: likeCount,
@@ -31,8 +33,8 @@ class SnippetModel extends SnippetEntity{
     updatedAt: updatedAt,
   );
 
-  factory SnippetModel.fromJson(Map<String, dynamic> json) =>
-      SnippetModel(
+  factory SnippetModel.fromJson(Map<String, dynamic> json) {
+      return SnippetModel(
         channelId: json['channelId'] as String? ?? '',
         textDisplay: json['textDisplay'] as String? ?? '',
         textOriginal: json['textOriginal'] as String? ?? '',
@@ -40,11 +42,13 @@ class SnippetModel extends SnippetEntity{
         authorDisplayName: json['authorDisplayName'] as String? ?? '',
         authorProfileImageUrl: json['authorProfileImageUrl'] as String? ?? '',
         authorChannelUrl: json['authorChannelUrl'] as String? ?? '',
-        authorChannelId: json['authorChannelId'] as String? ?? '',
+        authorChannelIdReplies: json['authorChannelId'] == null ?
+        const AuthorChannelIdRepliesEntity() : AuthorChannelIdRepliesModel.fromJson(json['authorChannelId'] as Map<String, dynamic>),
         canRate: json['canRate'] as bool? ?? false,
         viewerRating: json['viewerRating'] as String? ?? '',
         likeCount: json['likeCount'] as int? ?? 0,
         publishedAt: json['publishedAt'] as String? ?? '',
         updatedAt: json['updatedAt'] as String? ?? '',
       );
+  }
 }

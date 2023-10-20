@@ -12,7 +12,15 @@ class CommentRepliesModel extends CommentRepliesEntity{
     items,
 }):super(kind: kind, etag: etag, nextPageToken: nextPageToken, pageInfo: pageInfo, items: items);
 
-  factory CommentRepliesModel.fromJson(Map<String, dynamic> json) => CommentRepliesModel(
+  factory CommentRepliesModel.fromJson(Map<String, dynamic> json) {
+    if((json['items'] as List<dynamic>).isNotEmpty){
+      print((json['items'] as List<dynamic>?)
+          ?.map((e) => ItemRepliesModel.fromJson(e as Map<String, dynamic>))
+          .toList()[0].snippet.textOriginal ??
+          const [],);
+    }
+
+    return CommentRepliesModel(
     kind: json['kind'] as String? ?? '',
     etag: json['etag'] as String? ?? '',
     nextPageToken: json['nextPageToken'] as String? ?? '',
@@ -23,6 +31,6 @@ class CommentRepliesModel extends CommentRepliesEntity{
         ?.map((e) => ItemRepliesModel.fromJson(e as Map<String, dynamic>))
         .toList() ??
         const [],
-  );
+  );}
 
 }

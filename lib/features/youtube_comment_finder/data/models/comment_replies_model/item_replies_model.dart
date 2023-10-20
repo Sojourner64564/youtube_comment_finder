@@ -10,7 +10,8 @@ class ItemRepliesModel extends ItemRepliesEntity{
     snippet,
 });
 
-  factory ItemRepliesModel.fromJson(Map<String, dynamic> json) => ItemRepliesModel(
+  factory ItemRepliesModel.fromJson(Map<String, dynamic> json){
+    return ItemRepliesModel(
     kind: json['kind'] as String? ?? '',
     etag: json['etag'] as String? ?? '',
     id: json['id'] as String? ?? '',
@@ -18,4 +19,5 @@ class ItemRepliesModel extends ItemRepliesEntity{
         ? const SnippetEntity()
         : SnippetModel.fromJson(json['snippet'] as Map<String, dynamic>),
   );
+  }
 }

@@ -9,13 +9,6 @@ class CommentModel extends CommentEntity{
       snippet,
   }) : super(kind: kind, etag: etag, id: id, snippet: snippet);
 
- /* factory CommentModel.fromJson(Map<String, dynamic> json) => CommentModel(
-    kind: json["kind"],
-    etag: json["etag"],
-    id: json["id"],
-    snippet: TopLevelCommentSnippetModel.fromJson(json["snippet"]),
-  );*/
-
   factory CommentModel.fromJson(Map<String, dynamic> json) =>
       CommentModel(
         kind: json['kind'] as String? ?? '',

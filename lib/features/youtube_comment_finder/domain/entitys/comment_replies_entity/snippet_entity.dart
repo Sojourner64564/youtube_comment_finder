@@ -1,3 +1,4 @@
+import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/comment_replies_entity/author_channel_id_replies_entity.dart';
 
 class SnippetEntity {
   final String channelId;
@@ -7,7 +8,7 @@ class SnippetEntity {
   final String authorDisplayName;
   final String authorProfileImageUrl;
   final String authorChannelUrl;
-  final String authorChannelId;
+  final AuthorChannelIdRepliesEntity authorChannelIdReplies;
   final bool canRate;
   final String viewerRating;
   final int likeCount;
@@ -22,12 +23,11 @@ class SnippetEntity {
      this.authorDisplayName = '',
      this.authorProfileImageUrl = '',
      this.authorChannelUrl = '',
-     this.authorChannelId = '',
+     this.authorChannelIdReplies = const AuthorChannelIdRepliesEntity(),
      this.canRate = false,
      this.viewerRating = '',
      this.likeCount = 0,
      this.publishedAt = '',
      this.updatedAt = '',
   });
-
 }

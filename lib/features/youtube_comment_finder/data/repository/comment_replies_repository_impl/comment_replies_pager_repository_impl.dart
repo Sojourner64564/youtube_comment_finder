@@ -1,4 +1,5 @@
 import 'package:dartz/dartz.dart';
+import 'package:injectable/injectable.dart';
 import 'package:youtube_comment_finder/core/data_sources/comment_replies_data_source/comment_replies_pager_remote_data_source.dart';
 import 'package:youtube_comment_finder/core/error/failure.dart';
 import 'package:youtube_comment_finder/core/network/network_info.dart';
@@ -6,6 +7,7 @@ import 'package:youtube_comment_finder/features/youtube_comment_finder/data/mode
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/repository/comment_replies_repository/comment_replies_pager_repository.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/usecase/params/comment_replies_params/comment_replies_params.dart';
 
+@LazySingleton(as: CommentRepliesPagerRepository)
 class CommentRepliesPagerRepositoryImpl implements CommentRepliesPagerRepository{
   CommentRepliesPagerRepositoryImpl(this.commentRepliesPagerRemoteDataSource, this.networkInfo);
 

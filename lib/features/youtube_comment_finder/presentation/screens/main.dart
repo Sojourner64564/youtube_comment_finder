@@ -44,7 +44,6 @@ class _MyAppState extends State<MyApp> {
                         color: Colors.grey,
                       ),
                       child: Column(
-                        //crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           const SizedBox(height: 15),
                           Padding(
@@ -62,8 +61,11 @@ class _MyAppState extends State<MyApp> {
                               child: ListView.separated(
                                 itemCount: state.commentList[firstIndex].replies.comments.length,
                                 itemBuilder: (BuildContext context, int secondIndex){
-                                     return Text(state.commentList[firstIndex].replies.comments[secondIndex].snippet.textOriginal);
-                              }, separatorBuilder: (BuildContext context, int index) {
+                                  //print(state.repliesList[1][0].snippet.textOriginal);
+
+                                  return Text(state.commentList[firstIndex].replies.comments[secondIndex].snippet.textOriginal);
+                                    // return Text(state.repliesList[firstIndex][secondIndex].snippet.textOriginal);
+                                }, separatorBuilder: (BuildContext context, int index) {
                                     return const Divider(height: 20,thickness: 5,);
                               },
                               ),
