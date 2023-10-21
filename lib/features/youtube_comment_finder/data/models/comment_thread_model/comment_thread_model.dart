@@ -17,8 +17,8 @@ class CommentThreadModel extends CommentThreadEntity{
     items: items
   );
 
-  factory CommentThreadModel.fromJson(Map<String, dynamic> json) =>
-       CommentThreadModel(
+  factory CommentThreadModel.fromJson(Map<String, dynamic> json) {
+      return CommentThreadModel(
         kind: json['kind'] as String? ?? '',
         etag: json['etag'] as String? ?? '',
         nextPageToken: json['nextPageToken'] as String? ?? '',
@@ -30,6 +30,7 @@ class CommentThreadModel extends CommentThreadEntity{
             .toList() ??
             const [],
       );
+  }
 }
 
 

@@ -14,11 +14,6 @@ class CommentRepliesRemoteDataSourceImpl implements CommentRepliesRemoteDataSour
       Uri.parse('https://youtube.googleapis.com/youtube/v3/comments?key=AIzaSyAwN8yc4ittxrac_rhW4swd63odvZbHRD8&part=snippet&parentId=${commentRepliesParams.parentId}'),
     );
     if(response.statusCode == 200){
-      if(CommentRepliesModel.fromJson(json.decode(response.body)).items.isNotEmpty){
-        print('my boy');
-        //print(CommentRepliesModel.fromJson(json.decode(response.body)).items[0].snippet.textOriginal);
-
-      }
       return CommentRepliesModel.fromJson(json.decode(response.body));
     }else{
       throw ServerFailure();

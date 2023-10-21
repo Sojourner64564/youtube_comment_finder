@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:youtube_comment_finder/features/youtube_comment_finder/data/models/comment_replies_model/snippet_model.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/comment_replies_entity/item_replies_entity.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/comment_replies_entity/snippet_entity.dart';
@@ -8,7 +10,7 @@ class ItemRepliesModel extends ItemRepliesEntity{
     etag,
     id,
     snippet,
-});
+}):super(kind: kind, etag: etag, id: id, snippet: snippet);
 
   factory ItemRepliesModel.fromJson(Map<String, dynamic> json){
     return ItemRepliesModel(

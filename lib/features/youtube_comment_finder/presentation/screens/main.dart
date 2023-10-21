@@ -58,13 +58,11 @@ class _MyAppState extends State<MyApp> {
                             child: SizedBox(
                               height: 300,
                               width: MediaQuery.of(context).size.width*0.7,
-                              child: ListView.separated(
-                                itemCount: state.commentList[firstIndex].replies.comments.length,
+                              child: ListView.separated( //state.commentList[firstIndex].replies.comments.length,
+                                itemCount: state.repliesList[firstIndex].length,
                                 itemBuilder: (BuildContext context, int secondIndex){
-                                  //print(state.repliesList[1][0].snippet.textOriginal);
-
-                                  return Text(state.commentList[firstIndex].replies.comments[secondIndex].snippet.textOriginal);
-                                    // return Text(state.repliesList[firstIndex][secondIndex].snippet.textOriginal);
+                                  //return Text(state.commentList[firstIndex].replies.comments[secondIndex].snippet.textOriginal);
+                                     return Text(state.repliesList[firstIndex][secondIndex].snippet.textOriginal);
                                 }, separatorBuilder: (BuildContext context, int index) {
                                     return const Divider(height: 20,thickness: 5,);
                               },
