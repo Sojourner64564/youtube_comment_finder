@@ -50,12 +50,11 @@ class FetchCommentsCubit extends Cubit<MyState> {
         final failureOrCommentReplies = failureOrCommentRepliesEither.fold((failure) => ErrorState(), (commentReplies) => commentReplies);
         if(failureOrCommentReplies is ErrorState){
           emit(ErrorState());
-        }///_---------------------
+        }
         if((failureOrCommentReplies as CommentRepliesEntity).items.isNotEmpty){
           if(failureOrCommentReplies.nextPageToken == ''){
             itemRepliesListTwo = failureOrCommentReplies.items;
             listOfListsTwo.add(itemRepliesListTwo);
-            ///TODO ------------
           }else{
             String nextPageReplyToken = failureOrCommentReplies.nextPageToken;
             while(nextPageReplyToken != ''){
@@ -98,7 +97,6 @@ class FetchCommentsCubit extends Cubit<MyState> {
 
 
       for(int i=0;i<itemList.length;i++){
-        print(i.toString() + 'my i');
         final parentId = itemList[i].id;
         final failureOrCommentRepliesEither = await useCaseCommentRepliesImpl.call(CommentRepliesParams(parentId: parentId));
         final failureOrCommentReplies = failureOrCommentRepliesEither.fold((failure) => ErrorState(), (commentReplies) => commentReplies);
@@ -109,7 +107,6 @@ class FetchCommentsCubit extends Cubit<MyState> {
           if(failureOrCommentReplies.nextPageToken == ''){
             itemRepliesList = failureOrCommentReplies.items;
             listOfLists.add(itemRepliesList);
-              ///TODO ------------
           }else{
             String nextPageReplyToken = failureOrCommentReplies.nextPageToken;
             while(nextPageReplyToken != ''){
@@ -130,7 +127,7 @@ class FetchCommentsCubit extends Cubit<MyState> {
       }
       print(listOfLists.length);
       print(listOfLists);
-      emit(LoadedState(itemList, listOfLists));
+      emit(LoadedState(itemList, listOfLists)); ///--------------------------
     }
   }
 }

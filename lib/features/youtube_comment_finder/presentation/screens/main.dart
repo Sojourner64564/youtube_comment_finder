@@ -2,19 +2,34 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:youtube_comment_finder/assets/text_styles/my_text_styles.dart';
 import 'package:youtube_comment_finder/core/injectable/injectable.dart';
+import 'package:youtube_comment_finder/core/routes/routes.gr.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/presentation/cubit/fetch_comments_cubit/fetch_comments_cubit.dart';
+import 'package:youtube_comment_finder/features/youtube_comment_finder/presentation/screens/first_screen/first_screen.dart';
 
 void main() {
   configureDependencies();
   runApp(MyApp());
 }
 
-class MyApp extends StatefulWidget {
+class MyApp extends StatelessWidget{
+  final _appRouter = AppRouter();
+
   @override
-  State<MyApp> createState() => _MyAppState();
+  Widget build(BuildContext context) {
+    return MaterialApp.router(
+      routerDelegate: _appRouter.delegate(),
+      routeInformationParser: _appRouter.defaultRouteParser(),
+    );
+  }
+
 }
 
-class _MyAppState extends State<MyApp> {
+class MyAppOld extends StatefulWidget {
+  @override
+  State<MyAppOld> createState() => _MyAppOldState();
+}
+
+class _MyAppOldState extends State<MyAppOld> {
   final FetchCommentsCubit myCubit = getIt<FetchCommentsCubit>();
 
   @override
@@ -58,10 +73,9 @@ class _MyAppState extends State<MyApp> {
                             child: SizedBox(
                               height: 300,
                               width: MediaQuery.of(context).size.width*0.7,
-                              child: ListView.separated( //state.commentList[firstIndex].replies.comments.length,
+                              child: ListView.separated(
                                 itemCount: state.repliesList[firstIndex].length,
                                 itemBuilder: (BuildContext context, int secondIndex){
-                                  //return Text(state.commentList[firstIndex].replies.comments[secondIndex].snippet.textOriginal);
                                      return Text(state.repliesList[firstIndex][secondIndex].snippet.textOriginal);
                                 }, separatorBuilder: (BuildContext context, int index) {
                                     return const Divider(height: 20,thickness: 5,);
