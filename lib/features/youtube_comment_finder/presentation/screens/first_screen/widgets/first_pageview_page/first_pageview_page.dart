@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:youtube_comment_finder/assets/text_styles/my_text_styles.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/presentation/assets/colors/my_colors.dart';
 
 class FirstPageviewPage extends StatelessWidget{
@@ -17,21 +17,23 @@ class FirstPageviewPage extends StatelessWidget{
               child: Column(
                 children: [
                   const SizedBox(height: 20),
-                  const Text('Введите ссылку на видео',style: TextStyle(color: MyColors.lightGreyTextColor),),
+                  const Text('Введите ссылку на видео',style: MyTextStyles.middleSizeGreyTextStyle,),
                   const SizedBox(height: 10),
-                  TextField(
+                   TextField(
                     decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderSide: const BorderSide(width: 3, color: MyColors.lightGreyTextColor),
-                      borderRadius: BorderRadius.circular(5),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(width: 3, color: MyColors.purpleThemeColor),
+                      borderRadius: BorderRadius.circular(10),
                     ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(width: 3, color: MyColors.redAccentThemeColor),
+                     borderRadius: BorderRadius.circular(10),
+                  ),
                   ),
                   ),
                   const SizedBox(height: 10),
-                  const Text('Пример : https://www.youtube.com/watch?v=pyKONWsQ1ek',
-                  style: TextStyle(
-                    color: Colors.grey,
-                  ),
+                  const Text('Пример: https://www.youtube.com/watch?v=pyKONWsQ1ek',
+                  style: MyTextStyles.smallSizeGreyTextStyle,
                   ),
                   const SizedBox(height: 10),
                   SizedBox(
@@ -39,7 +41,10 @@ class FirstPageviewPage extends StatelessWidget{
                   width: 200,
                   child: ElevatedButton(
                     onPressed: () {  },
-                    child: const Text('Запарсить'),
+                    style: const ButtonStyle(
+                      backgroundColor: MaterialStatePropertyAll<Color>(MyColors.purpleThemeColor),
+                    ),
+                    child: const Text('Запарсить',style: MyTextStyles.middleSizeGreyTextStyle,),
                   ),
                   ),
                   const SizedBox(height: 20),
