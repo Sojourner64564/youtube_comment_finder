@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:youtube_comment_finder/assets/text_styles/my_text_styles.dart';
 import 'package:youtube_comment_finder/core/injectable/injectable.dart';
+import 'package:youtube_comment_finder/features/youtube_comment_finder/presentation/assets/colors/my_colors.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/presentation/cubit/fetch_comments_cubit/fetch_comments_cubit.dart';
 
 class SecondPageviewPage extends StatelessWidget{
@@ -27,10 +28,7 @@ class SecondPageviewPage extends StatelessWidget{
             itemBuilder: (BuildContext context, int firstIndex){
               return Container(
                   width: double.infinity,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.grey,
-                  ),
+                  color: MyColors.firstBackgroundColor,
                   child: Column(
                     children: [
                       const SizedBox(height: 15),
@@ -43,15 +41,31 @@ class SecondPageviewPage extends StatelessWidget{
                       const SizedBox(height: 20),
                       Align(
                         alignment: AlignmentDirectional.centerEnd,
+                        child: Container(
+                          height: 2,
+                          width: MediaQuery.of(context).size.width*0.7,
+                          color: MyColors.purpleThemeColor,
+                        ),
+                      ),
+                      const SizedBox(height: 20),
+                      Align(
+                        alignment: AlignmentDirectional.centerEnd,
                         child: SizedBox(
                           height: 300,
-                          width: MediaQuery.of(context).size.width*0.7,
+                          width: MediaQuery.of(context).size.width*0.8,
                           child: ListView.separated(
                             itemCount: state.repliesList[firstIndex].length,
                             itemBuilder: (BuildContext context, int secondIndex){
-                              return Text(state.repliesList[firstIndex][secondIndex].snippet.textOriginal);
+                              return Text(
+                                state.repliesList[firstIndex][secondIndex].snippet.textOriginal,
+                              style: MyTextStyles.bottomLevelCommentTextStyle,
+                              );
                             }, separatorBuilder: (BuildContext context, int index) {
-                            return const Divider(height: 20,thickness: 5,);
+                            return const Divider(
+                              height: 20,
+                              thickness: 1,
+                            color: MyColors.redAccentThemeColor,
+                            );
                           },
                           ),
                         ),

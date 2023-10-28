@@ -12,7 +12,8 @@ class CommentThreadPagerRemoteDataSourceImpl implements CommentThreadPagerRemote
   Future<CommentThreadModel> fetchComments(Params params) async{ // dbF9oRa0a7g мои комменты //много комментов WxcsUbjJNKs
     final response = await http.get(
       Uri.parse(
-          'https://www.googleapis.com/youtube/v3/commentThreads?key=AIzaSyAwN8yc4ittxrac_rhW4swd63odvZbHRD8&part=snippet,replies&videoId=9qCir67FlU8&pageToken=${params.pageToken}'),
+          'https://www.googleapis.com/youtube/v3/commentThreads?key=AIzaSyAwN8yc4ittxrac_rhW4swd63odvZbHRD8&part=snippet,replies&videoId='
+              '${params.videoId}&pageToken=${params.pageToken}'),
       headers: {'Content-Type': 'application/json'},
     );
     if (response.statusCode == 200) {

@@ -5,6 +5,7 @@ import 'package:youtube_comment_finder/core/error/failure.dart';
 import 'package:youtube_comment_finder/core/network/network_info.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/data/models/comment_thread_model/comment_thread_model.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/repository/comment_thread_repository/comment_thread_repository.dart';
+import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/usecase/params/params.dart';
 import 'package:youtube_comment_finder/random_shit/you.dart';
 
 @LazySingleton(as: CommentThreadRepository)
@@ -15,9 +16,9 @@ class CommentThreadRepositoryImpl implements CommentThreadRepository{
   final CommentThreadRemoteDataSource commentThreadRemoteDataSource;
 
   @override
-  Future<Either<Failure, CommentThreadModel>> getCommentThread() async{
+  Future<Either<Failure, CommentThreadModel>> getCommentThread(Params params) async{
     if(await networkInfo.isConnected){
-      final remoteComment = await commentThreadRemoteDataSource.fetchComments();
+      final remoteComment = await commentThreadRemoteDataSource.fetchComments(params);
       return Right(remoteComment);
     }else{
       return Left(ServerFailure());

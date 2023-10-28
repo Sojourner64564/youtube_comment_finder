@@ -4,15 +4,16 @@ import 'package:youtube_comment_finder/core/data_sources/comment_thread_data_sou
 import 'package:youtube_comment_finder/core/error/failure.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/data/models/comment_thread_model/comment_thread_model.dart';
 import 'package:http/http.dart' as http;
+import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/usecase/params/params.dart';
 
 
 @LazySingleton(as: CommentThreadRemoteDataSource)
 class CommentThreadRemoteDataSourceImpl implements CommentThreadRemoteDataSource{
   @override
-  Future<CommentThreadModel> fetchComments() async{ // _HebGGHVaZI - 1 коммент _94dSVxTW80 - много комментов
+  Future<CommentThreadModel> fetchComments(Params params) async{ // _HebGGHVaZI - 1 коммент _94dSVxTW80 - много комментов
     final response = await http.get(
       Uri.parse(
-          'https://www.googleapis.com/youtube/v3/commentThreads?key=AIzaSyAwN8yc4ittxrac_rhW4swd63odvZbHRD8&part=snippet,replies&videoId=9qCir67FlU8'),
+          'https://www.googleapis.com/youtube/v3/commentThreads?key=AIzaSyAwN8yc4ittxrac_rhW4swd63odvZbHRD8&part=snippet,replies&videoId=${params.videoId}'),
       headers: {'Content-Type': 'application/json'},
     );
     if (response.statusCode == 200) {

@@ -9,7 +9,7 @@ class FirstScreen extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: MyColors.backgroundColor,
+        backgroundColor: MyColors.firstBackgroundColor,
         centerTitle: true,
         title: const Text('Парсер комментов', style: MyTextStyles.largeThiccSizeGreyTextStyle,),
       ),

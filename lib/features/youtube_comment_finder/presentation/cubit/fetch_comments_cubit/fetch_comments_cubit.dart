@@ -26,9 +26,10 @@ class FetchCommentsCubit extends Cubit<MyState> {
   List<CommentThreadEntity> commentsList = [];
 
 
-  void fetchComments() async {
+  void fetchComments(String videoId) async {
     commentsList.clear();
-    final failureOrCommentsEither = await useCaseCommentThreadImpl.call(NoParams());
+    emit(LoadingState());
+    final failureOrCommentsEither = await useCaseCommentThreadImpl.call(Params(videoId: videoId));
     final failureOrComments = failureOrCommentsEither.fold((failure) => ErrorState(), (commentThread) => commentThread);
     if(failureOrComments is ErrorState){
       emit(ErrorState());
@@ -73,13 +74,11 @@ class FetchCommentsCubit extends Cubit<MyState> {
           listOfListsTwo.add([]);
         }
       }
-      print(listOfListsTwo);
-      emit(LoadedState(itemList, listOfListsTwo));///TODO----------
+      emit(LoadedState(itemList, listOfListsTwo));///----------
     }else{
       String nextPagToken = failureOrComments.nextPageToken;
       while(nextPagToken != ''){
-        print(nextPagToken);
-        final failureOrCommentsPagerEither = await useCaseCommentThreadPagerImpl.call(Params(nextPagToken));
+        final failureOrCommentsPagerEither = await useCaseCommentThreadPagerImpl.call(Params(videoId: videoId,pageToken:nextPagToken));
         final failureOrCommentsPager = failureOrCommentsPagerEither.fold((failure) => ErrorState(), (commentThread) => commentThread);
         if(failureOrCommentsPager is ErrorState){
           emit(ErrorState());
@@ -125,8 +124,6 @@ class FetchCommentsCubit extends Cubit<MyState> {
           listOfLists.add([]);
         }
       }
-      print(listOfLists.length);
-      print(listOfLists);
       emit(LoadedState(itemList, listOfLists)); ///--------------------------
     }
   }

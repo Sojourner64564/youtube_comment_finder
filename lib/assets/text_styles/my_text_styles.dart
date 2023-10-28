@@ -5,6 +5,13 @@ class MyTextStyles{
   static const topLevelCommentTextStyle = TextStyle(
     fontWeight: FontWeight.w600,
     fontSize: 15,
+    color: MyColors.lightGreyTextColor
+  );
+
+  static const bottomLevelCommentTextStyle = TextStyle(
+      fontWeight: FontWeight.w500,
+      fontSize: 13,
+      color: MyColors.lightGreyTextColor
   );
 
   static const middleSizeGreyTextStyle = TextStyle(

@@ -34,7 +34,7 @@ class _MyAppOldState extends State<MyAppOld> {
 
   @override
   void initState() {
-    myCubit.fetchComments();
+    //myCubit.fetchComments();
     super.initState();
   }
 
