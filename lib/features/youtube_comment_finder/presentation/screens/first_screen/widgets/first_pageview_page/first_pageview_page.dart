@@ -28,6 +28,7 @@ class FirstPageviewPage extends StatelessWidget{
                   const SizedBox(height: 10),
                    TextField(
                      controller: _controller,
+                    style: MyTextStyles.smallSizeGreyTextStyle,
                     decoration: InputDecoration(
                     focusedBorder: OutlineInputBorder(
                       borderSide: const BorderSide(width: 3, color: MyColors.purpleThemeColor),

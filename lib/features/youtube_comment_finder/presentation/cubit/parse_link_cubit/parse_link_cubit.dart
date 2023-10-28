@@ -13,7 +13,7 @@ class ParseLinkCubit extends Cubit<String> {
  void parseLink(String link){
    final fetchCommentsCubit = getIt<FetchCommentsCubit>();
     pageController.nextPage(duration: const Duration(milliseconds: 400), curve: Curves.linear);
-    final list = link.split('');
+    final list = link.split(''); //TODO сделать вывод ошибок в случае неправильного ввода
     list.removeRange(0, 32);
     final videoId = list.join('');
    fetchCommentsCubit.fetchComments(videoId);

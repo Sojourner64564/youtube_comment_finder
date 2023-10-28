@@ -3,6 +3,7 @@ import 'package:youtube_comment_finder/core/injectable/injectable.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/presentation/cubit/parse_link_cubit/parse_link_cubit.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/presentation/screens/first_screen/widgets/first_pageview_page/first_pageview_page.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/presentation/screens/first_screen/widgets/second_pageview_page/second_pageview_page.dart';
+import 'package:youtube_comment_finder/features/youtube_comment_finder/presentation/screens/first_screen/widgets/third_pageview_page/third_pageview_page.dart';
 
 class FirstPage extends StatefulWidget{
 
@@ -25,7 +26,7 @@ class _FirstPageState extends State<FirstPage> {
       children: [
         FirstPageviewPage(),
         SecondPageviewPage(),
-
+        ThirdPageviewPage(),
       ],
     );
   }
