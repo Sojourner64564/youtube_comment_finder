@@ -1,16 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:youtube_comment_finder/assets/text_styles/my_text_styles.dart';
 import 'package:youtube_comment_finder/core/injectable/injectable.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/presentation/assets/colors/my_colors.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/presentation/cubit/fetch_comments_cubit/fetch_comments_cubit.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/presentation/cubit/parse_link_cubit/parse_link_cubit.dart';
 
-class FirstPageviewPage extends StatelessWidget{
+class FirstPageviewPage extends StatefulWidget{
   FirstPageviewPage();
+
+  @override
+  State<FirstPageviewPage> createState() => _FirstPageviewPageState();
+}
+
+class _FirstPageviewPageState extends State<FirstPageviewPage> {
   final fetchCommentCubit = getIt<FetchCommentsCubit>();
+
   final TextEditingController _controller = TextEditingController();
+
   final parseLinkCubit = getIt<ParseLinkCubit>();
 
+  @override
+  void initState() {
+    _controller.text = 'https://www.youtube.com/watch?v=TraLMFDWyxw';
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -25,6 +39,13 @@ class FirstPageviewPage extends StatelessWidget{
                 children: [
                   const SizedBox(height: 20),
                   const Text('Введите ссылку на видео',style: MyTextStyles.middleSizeGreyTextStyle,),
+                  const SizedBox(height: 10),
+                  BlocBuilder(
+                    bloc: parseLinkCubit,
+                      builder: (context, state){
+                        return Text(state.toString(), style: MyTextStyles.smallSizeRedTextStyle,);
+                      }
+                  ),
                   const SizedBox(height: 10),
                    TextField(
                      controller: _controller,
@@ -51,7 +72,6 @@ class FirstPageviewPage extends StatelessWidget{
                   child: ElevatedButton(
                     onPressed: () {
                       parseLinkCubit.parseLink(_controller.text);
-                      //fetchCommentCubit.fetchComments('7CxReCo373Y');
                     },
                     style: const ButtonStyle(
                       backgroundColor: MaterialStatePropertyAll<Color>(MyColors.purpleThemeColor),
@@ -68,5 +88,4 @@ class FirstPageviewPage extends StatelessWidget{
       ),
     );
   }
-
 }

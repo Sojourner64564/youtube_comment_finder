@@ -43,7 +43,7 @@ class SecondPageviewPage extends StatelessWidget{
                         alignment: AlignmentDirectional.centerEnd,
                         child: Container(
                           height: 2,
-                          width: MediaQuery.of(context).size.width*0.7,
+                          width: double.infinity,
                           color: MyColors.purpleThemeColor,
                         ),
                       ),

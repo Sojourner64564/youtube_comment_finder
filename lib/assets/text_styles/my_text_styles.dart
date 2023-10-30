@@ -31,4 +31,10 @@ class MyTextStyles{
     fontSize: 22,
     color: MyColors.lightGreyTextColor,
   );
+
+  static const smallSizeRedTextStyle = TextStyle(
+    fontWeight: FontWeight.w600,
+    fontSize: 13,
+    color: MyColors.redAccentThemeColor,
+  );
 }
