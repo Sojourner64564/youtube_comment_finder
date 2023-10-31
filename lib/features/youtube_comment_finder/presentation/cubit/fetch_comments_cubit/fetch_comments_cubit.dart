@@ -1,13 +1,11 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hive/hive.dart';
 import 'package:injectable/injectable.dart';
-import 'package:youtube_comment_finder/features/youtube_comment_finder/data/models/comment_replies_model/item_replies_model.dart';
-import 'package:youtube_comment_finder/features/youtube_comment_finder/data/models/comment_thread_model/comment_thread_model.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/comment_replies_entity/comment_replies_entity.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/comment_replies_entity/item_replies_entity.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/comment_thread_entity/comment_thread_entity.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/comment_thread_entity/item_entity.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/usecase/params/comment_replies_params/comment_replies_params.dart';
-import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/usecase/params/no_params.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/usecase/params/params.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/usecase/use_case_comment_replies_impl/use_case_comment_replies_impl.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/usecase/use_case_comment_replies_impl/use_case_comment_replies_pager_impl.dart';
@@ -36,7 +34,6 @@ class FetchCommentsCubit extends Cubit<MyState> {
       throw UnimplementedError();
     }
     commentsList.add(failureOrComments as CommentThreadEntity);
-    print((failureOrComments).nextPageToken == '');
     if((failureOrComments).nextPageToken == ''){
       final itemList = commentsList.expand((element) => element.items).toList();
 
@@ -74,6 +71,9 @@ class FetchCommentsCubit extends Cubit<MyState> {
           listOfListsTwo.add([]);
         }
       }
+      final myBox = await Hive.openBox('myBox');
+      dynamic myValue = [itemList,listOfListsTwo];
+      myBox.put('key', myValue);
       emit(LoadedState(itemList, listOfListsTwo));///----------
     }else{
       String nextPagToken = failureOrComments.nextPageToken;
@@ -124,6 +124,9 @@ class FetchCommentsCubit extends Cubit<MyState> {
           listOfLists.add([]);
         }
       }
+      final myBox = await Hive.openBox('myBox');
+      dynamic myValue = [itemList,listOfLists];
+      myBox.put('key', myValue);
       emit(LoadedState(itemList, listOfLists)); ///--------------------------
     }
   }
