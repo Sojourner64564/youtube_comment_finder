@@ -13,10 +13,9 @@ class FindCommentCubit extends Cubit<FindCommentState> {
 
   Future<void> findComment(String text) async{
     final myBox = await Hive.openBox('myBox');
-    Object myOb = 'fdf';
-    print(myOb.runtimeType);
+
     final ItemEntity itemEntity = ItemEntity();
-    myBox.put('key', itemEntity);
+    myBox.put('key', itemEntity); //TODO добавить через globalKey полученные данные
 
   }
 
