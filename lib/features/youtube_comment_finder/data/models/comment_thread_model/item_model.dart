@@ -24,4 +24,13 @@ class ItemModel extends ItemEntity{
         ?  const RepliesEntity()
         : RepliesModel.fromJson(json['replies'] as Map<String, dynamic>),
   );
+
+  Map<String, dynamic> toJson(ItemModel instance) =>
+      <String, dynamic>{
+        'kind': instance.kind,
+        'etag': instance.etag,
+        'id': instance.id,
+        'itemSnippet': instance.itemSnippet.toJson(),
+        'replies': instance.replies.toJson(),
+      };
 }

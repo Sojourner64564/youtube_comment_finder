@@ -31,6 +31,19 @@ class CommentThreadModel extends CommentThreadEntity{
             const [],
       );
   }
+
+  Map<String, dynamic> toJson(CommentThreadModel instance) {
+   return <String, dynamic>{
+      'kind': instance.kind,
+      'etag': instance.etag,
+      'nextPageToken': instance.nextPageToken,
+      'pageInfo': (instance.pageInfo as PageInfoModel).toJson(instance.pageInfo as PageInfoModel),
+      'items': instance.items.map((e) => e.toJson()).toList(),
+    };
+  }
+
+
+
 }
 
 

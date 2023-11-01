@@ -6,17 +6,16 @@ class PageInfoModel extends PageInfoEntity{
      resultsPerPage,
   }) : super(totalResults: totalResults, resultsPerPage: resultsPerPage);
 
- /* factory PageInfoModel.fromJson(Map<String, dynamic> json) => PageInfoModel(
-    totalResults: json["totalResults"],
-    resultsPerPage: json["resultsPerPage"],
-  );*/
-
  factory PageInfoModel.fromJson(Map<String, dynamic> json) =>
      PageInfoModel(
        totalResults: json['totalResults'] as int? ?? 0,
        resultsPerPage: json['resultsPerPage'] as int? ?? 0,
      );
 
-
+ Map<String, dynamic> toJson(PageInfoModel instance) =>
+     <String, dynamic>{
+       'totalResults': instance.totalResults,
+       'resultsPerPage': instance.resultsPerPage,
+     };
 
 }

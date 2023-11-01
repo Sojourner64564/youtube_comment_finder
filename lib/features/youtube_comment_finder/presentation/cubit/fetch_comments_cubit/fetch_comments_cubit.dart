@@ -72,8 +72,7 @@ class FetchCommentsCubit extends Cubit<MyState> {
         }
       }
       final myBox = await Hive.openBox('myBox');
-      dynamic myValue = [itemList,listOfListsTwo];
-      myBox.put('key', myValue);
+
       emit(LoadedState(itemList, listOfListsTwo));///----------
     }else{
       String nextPagToken = failureOrComments.nextPageToken;
@@ -125,8 +124,7 @@ class FetchCommentsCubit extends Cubit<MyState> {
         }
       }
       final myBox = await Hive.openBox('myBox');
-      dynamic myValue = [itemList,listOfLists];
-      myBox.put('key', myValue);
+
       emit(LoadedState(itemList, listOfLists)); ///--------------------------
     }
   }
