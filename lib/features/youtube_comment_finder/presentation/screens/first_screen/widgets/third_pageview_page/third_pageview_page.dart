@@ -18,9 +18,28 @@ class ThirdPageviewPage extends StatelessWidget{
         child: Column(
           children: [
             const SizedBox(height: 20),
-            const Row(children: [
-              Text('Найдено совпадений: ',style: MyTextStyles.middleSizeGreyTextStyle,),
-              Text('1488',style: MyTextStyles.middleSizeGreyTextStyle,),
+            Row(children: [
+              const Text('Найдено совпадений: ',style: MyTextStyles.middleSizeGreyTextStyle,),
+              BlocBuilder(
+                bloc: findComment,
+                  builder: (BuildContext context, FindCommentState state){
+                    if(state is InitialState){
+                      return const Text('',style: MyTextStyles.middleSizeGreyTextStyle);
+                    }
+                    if(state is LoadingState){
+                      return const Text('. . .',style: MyTextStyles.middleSizeGreyTextStyle);
+                    }
+                    if(state is LoadedState){
+                      return Text(state.count, style: MyTextStyles.middleSizeGreyTextStyle);
+                    }
+                    if(state is FailState){
+                      return const Text('0',style: MyTextStyles.middleSizeGreyTextStyle);
+                    }else{
+                      return const Text('ошибка',style: MyTextStyles.middleSizeGreyTextStyle);
+                    }
+
+                  },
+              ),
             ],),
             const SizedBox(height: 20),
             TextField(
@@ -119,6 +138,9 @@ class ThirdPageviewPage extends StatelessWidget{
                       return const SizedBox(height: 30);
                     },
                   );
+                }
+                if(state is FailState){
+                  return const Center(child: Text('Cовпадений не найдено', style: MyTextStyles.middleSizeGreyTextStyle,),);
                 }
                 else{
                   return const Center(child: Text('cringe'));

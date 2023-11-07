@@ -1,16 +1,12 @@
 import 'package:youtube_comment_finder/features/youtube_comment_finder/data/models/comment_thread_model/comment_model.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/comment_thread_entity/replies_entity.dart';
-import 'package:json_annotation/json_annotation.dart';
 
-class RepliesModel extends RepliesEntity{
+class RepliesModel{
+  const RepliesModel({
+    this.comments = const [],
+  });
 
-  RepliesModel({
-     comments,
-  }) : super(comments: comments);
-
-  /*factory RepliesModel.fromJson(Map<String, dynamic> json) => RepliesModel(
-    comments: List<CommentModel>.from(json["comments"].map((x) => CommentModel.fromJson(x))),
-  );*/
+  final List<CommentModel> comments;
 
   factory RepliesModel.fromJson(Map<String, dynamic> json) =>
       RepliesModel(
@@ -19,4 +15,9 @@ class RepliesModel extends RepliesEntity{
             .toList() ??
             const [],
       );
+
+  Map<String, dynamic> toJson(RepliesModel instance) =>
+      <String, dynamic>{
+        'comments': instance.comments.map((e) => e.toJson(e)).toList(),
+      };
 }

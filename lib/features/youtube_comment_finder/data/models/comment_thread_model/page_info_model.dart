@@ -1,10 +1,10 @@
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/comment_thread_entity/page_info_entity.dart';
 
-class PageInfoModel extends PageInfoEntity{
- const PageInfoModel({
-     totalResults,
-     resultsPerPage,
-  }) : super(totalResults: totalResults, resultsPerPage: resultsPerPage);
+class PageInfoModel{
+ const PageInfoModel({this.totalResults = 0, this.resultsPerPage = 0,});
+
+ final int totalResults;
+ final int resultsPerPage;
 
  factory PageInfoModel.fromJson(Map<String, dynamic> json) =>
      PageInfoModel(
@@ -17,5 +17,4 @@ class PageInfoModel extends PageInfoEntity{
        'totalResults': instance.totalResults,
        'resultsPerPage': instance.resultsPerPage,
      };
-
 }

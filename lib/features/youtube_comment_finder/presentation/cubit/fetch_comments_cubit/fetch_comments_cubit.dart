@@ -1,6 +1,11 @@
+import 'dart:convert';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive/hive.dart';
 import 'package:injectable/injectable.dart';
+import 'package:youtube_comment_finder/features/youtube_comment_finder/data/models/comment_thread_model/comment_thread_model.dart';
+import 'package:youtube_comment_finder/features/youtube_comment_finder/data/models/comment_thread_model/item_model.dart';
+import 'package:youtube_comment_finder/features/youtube_comment_finder/data/models/comment_thread_model/page_info_model.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/comment_replies_entity/comment_replies_entity.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/comment_replies_entity/item_replies_entity.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/comment_thread_entity/comment_thread_entity.dart';
@@ -21,7 +26,7 @@ class FetchCommentsCubit extends Cubit<MyState> {
   final UseCaseCommentThreadPagerImpl useCaseCommentThreadPagerImpl;
   final UseCaseCommentRepliesImpl useCaseCommentRepliesImpl;
   final UseCaseCommentRepliesPagerImpl useCaseCommentRepliesPagerImpl;
-  List<CommentThreadEntity> commentsList = [];
+  List<CommentThreadModel> commentsList = [];
 
 
   void fetchComments(String videoId) async {
@@ -33,7 +38,7 @@ class FetchCommentsCubit extends Cubit<MyState> {
       emit(ErrorState());
       throw UnimplementedError();
     }
-    commentsList.add(failureOrComments as CommentThreadEntity);
+    commentsList.add(failureOrComments as CommentThreadModel);
     if((failureOrComments).nextPageToken == ''){
       final itemList = commentsList.expand((element) => element.items).toList();
 
@@ -72,17 +77,20 @@ class FetchCommentsCubit extends Cubit<MyState> {
         }
       }
       final myBox = await Hive.openBox('myBox');
-
+      myBox.put('key',
+          jsonEncode(const CommentThreadModel()
+              .toJson(CommentThreadModel(items: itemList,))));
+myBox.close();
       emit(LoadedState(itemList, listOfListsTwo));///----------
     }else{
       String nextPagToken = failureOrComments.nextPageToken;
       while(nextPagToken != ''){
-        final failureOrCommentsPagerEither = await useCaseCommentThreadPagerImpl.call(Params(videoId: videoId,pageToken:nextPagToken));
+        final failureOrCommentsPagerEither = await useCaseCommentThreadPagerImpl.call(Params(videoId: videoId, pageToken:nextPagToken));
         final failureOrCommentsPager = failureOrCommentsPagerEither.fold((failure) => ErrorState(), (commentThread) => commentThread);
         if(failureOrCommentsPager is ErrorState){
           emit(ErrorState());
         }
-        commentsList.add(failureOrCommentsPager as CommentThreadEntity);
+        commentsList.add(failureOrCommentsPager as CommentThreadModel);
         nextPagToken = failureOrCommentsPager.nextPageToken;
       }
 
@@ -124,7 +132,8 @@ class FetchCommentsCubit extends Cubit<MyState> {
         }
       }
       final myBox = await Hive.openBox('myBox');
-
+      myBox.put('key', json.encode(const CommentThreadModel().toJson(CommentThreadModel(items: itemList))));
+      myBox.close();
       emit(LoadedState(itemList, listOfLists)); ///--------------------------
     }
   }

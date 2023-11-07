@@ -2,20 +2,21 @@ import 'package:youtube_comment_finder/features/youtube_comment_finder/data/mode
 import 'package:youtube_comment_finder/features/youtube_comment_finder/data/models/comment_thread_model/page_info_model.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/comment_thread_entity/comment_thread_entity.dart';
 
-class CommentThreadModel extends CommentThreadEntity{
+class CommentThreadModel{
   const CommentThreadModel({
-    required String kind,
-    required String etag,
-    required String nextPageToken,
-    required PageInfoModel pageInfo,
-    required List<ItemModel> items,
-  }): super(
-    kind: kind,
-    etag: etag,
-      nextPageToken: nextPageToken,
-      pageInfo: pageInfo,
-    items: items
-  );
+    this.kind = '',
+    this.etag= '',
+    this.nextPageToken= '',
+    this.pageInfo= const PageInfoModel(),
+    this.items= const [],
+  });
+
+  final String kind;
+  final String etag;
+  final String nextPageToken;
+  final PageInfoModel pageInfo;
+  final List<ItemModel> items;
+
 
   factory CommentThreadModel.fromJson(Map<String, dynamic> json) {
       return CommentThreadModel(
@@ -37,8 +38,8 @@ class CommentThreadModel extends CommentThreadEntity{
       'kind': instance.kind,
       'etag': instance.etag,
       'nextPageToken': instance.nextPageToken,
-      'pageInfo': (instance.pageInfo as PageInfoModel).toJson(instance.pageInfo as PageInfoModel),
-      'items': instance.items.map((e) => e.toJson()).toList(),
+      'pageInfo': instance.pageInfo.toJson(instance.pageInfo),
+      'items': instance.items.map((e) => e.toJson(e)).toList(),
     };
   }
 
@@ -48,3 +49,20 @@ class CommentThreadModel extends CommentThreadEntity{
 
 
 
+/*
+class CommentThreadModel extends CommentThreadEntity{
+  const CommentThreadModel({
+    required String kind,
+    required String etag,
+    required String nextPageToken,
+    required PageInfoModel pageInfo,
+    required List<ItemModel> items,
+  }): super(
+    kind: kind,
+    etag: etag,
+      nextPageToken: nextPageToken,
+      pageInfo: pageInfo,
+    items: items
+  );
+
+ */
