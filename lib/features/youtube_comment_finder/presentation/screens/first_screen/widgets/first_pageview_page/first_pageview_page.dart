@@ -21,8 +21,8 @@ class _FirstPageviewPageState extends State<FirstPageviewPage> {
   final parseLinkCubit = getIt<ParseLinkCubit>();
 
   @override
-  void initState() {
-    _controller.text = 'https://www.youtube.com/watch?v=z8qaZax9qHM';
+  void initState() { //https://www.youtube.com/watch?v=5F6WUbhCr_c    https://www.youtube.com/watch?v=z8qaZax9qHM
+    _controller.text = 'https://www.youtube.com/watch?v=5F6WUbhCr_c';
     super.initState();
   }
   @override

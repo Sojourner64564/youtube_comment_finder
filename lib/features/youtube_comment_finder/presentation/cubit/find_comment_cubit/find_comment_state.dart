@@ -4,7 +4,11 @@ part of 'find_comment_cubit.dart';
 abstract class FindCommentState {}
 
 class InitialState extends FindCommentState {}
-class LoadingState extends FindCommentState {}
+class LoadingState extends FindCommentState {
+  final String bruh;
+
+  LoadingState(this.bruh);
+}
 class LoadedState extends FindCommentState {
   final List<ItemModel> commentList;
   final List<List<ItemRepliesEntity>> repliesList;

@@ -5,11 +5,8 @@ import 'package:hive/hive.dart';
 import 'package:injectable/injectable.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/data/models/comment_thread_model/comment_thread_model.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/data/models/comment_thread_model/item_model.dart';
-import 'package:youtube_comment_finder/features/youtube_comment_finder/data/models/comment_thread_model/page_info_model.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/comment_replies_entity/comment_replies_entity.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/comment_replies_entity/item_replies_entity.dart';
-import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/comment_thread_entity/comment_thread_entity.dart';
-import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/entitys/comment_thread_entity/item_entity.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/usecase/params/comment_replies_params/comment_replies_params.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/usecase/params/params.dart';
 import 'package:youtube_comment_finder/features/youtube_comment_finder/domain/usecase/use_case_comment_replies_impl/use_case_comment_replies_impl.dart';
@@ -78,7 +75,7 @@ class FetchCommentsCubit extends Cubit<MyState> {
       }
       final myBox = await Hive.openBox('myBox');
       myBox.put('key',
-          jsonEncode(const CommentThreadModel()
+          json.encode(const CommentThreadModel()
               .toJson(CommentThreadModel(items: itemList,))));
 myBox.close();
       emit(LoadedState(itemList, listOfListsTwo));///----------

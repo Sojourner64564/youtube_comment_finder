@@ -71,6 +71,31 @@ class ThirdPageviewPage extends StatelessWidget{
               ),
             ),
             const SizedBox(height: 20),
+            /*SizedBox(
+              height: MediaQuery.of(context).size.height*0.4,
+              width: double.infinity,
+              child: BlocBuilder(
+                bloc: findComment,
+                builder: (BuildContext context, FindCommentState state){
+                  if(state is InitialState){
+                    return const Text('',style: MyTextStyles.middleSizeGreyTextStyle);
+                  }
+                  if(state is LoadingState){
+                    _controller.text = state.bruh;
+                    return SingleChildScrollView(child: Text(state.bruh, style: MyTextStyles.middleSizeGreyTextStyle,));
+                  }
+                  if(state is LoadedState){
+
+                  }
+                  if(state is FailState){
+                    return const Text('0',style: MyTextStyles.middleSizeGreyTextStyle);
+                  }else{
+                    return const Text('ошибка',style: MyTextStyles.middleSizeGreyTextStyle);
+                  }
+
+                },
+              ),
+            ),*/
             SizedBox(
             height: MediaQuery.of(context).size.height*0.4,
             width: double.infinity,

@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:bloc/bloc.dart';
+import 'package:dartz/dartz_unsafe.dart';
 import 'package:hive/hive.dart';
 import 'package:injectable/injectable.dart';
 import 'package:meta/meta.dart';
@@ -18,10 +19,15 @@ class FindCommentCubit extends Cubit<FindCommentState> {
     final myBox = await Hive.openBox('myBox');
     final myJson = myBox.get('key');
     print(myJson);
+    emit(LoadingState(myJson));
     final myModel = CommentThreadModel.fromJson(json.decode(myJson));
     final itemList = myModel.items;
     print(myModel.items[0].itemSnippet.topLevelComment.snippet.textOriginal);
     print(itemList[0].itemSnippet.topLevelComment.snippet.textOriginal);
+    List<List<ItemRepliesEntity>> myList = [];
+    itemList.forEach((element) => myList.add([]));
+    print(myList);
+    emit(LoadedState(itemList, myList, 0.toString()));
     /*emit(LoadingState());
     if(text.isNotEmpty){
       final myBox = await Hive.openBox('myBox');
